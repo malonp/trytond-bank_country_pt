@@ -1,0 +1,3215 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!--
+        Output of scripts/bank_pt.py
+        -->
+
+        <record id="PARTY-PT0001" model="party.party">
+            <field name="name">BANCO DE PORTUGAL, EP</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0001" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0001"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0001" model="bank">
+            <field name="party" ref="PARTY-PT0001"/>
+            <field name="bic">BGALPTTGXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0001</field>
+        </record>
+
+        <record id="PARTY-PT0007" model="party.party">
+            <field name="name">NOVO BANCO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0007" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0007"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0007" model="party.address">
+            <field name="party" ref="PARTY-PT0007"/>
+            <field name="street">AVENIDA DA LIBERDADE, N.º 195</field>
+            <field name="zip">1250-142</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0007" model="bank">
+            <field name="party" ref="PARTY-PT0007"/>
+            <field name="bic">BESCPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0007</field>
+        </record>
+
+        <record id="PARTY-PT0008" model="party.party">
+            <field name="name">BANCO BAI EUROPA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0008" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0008"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0008" model="party.address">
+            <field name="party" ref="PARTY-PT0008"/>
+            <field name="street">AVENIDA ANTÓNIO AUGUSTO DE AGUIAR, N.º 130, 8º ANDAR</field>
+            <field name="zip">1050-020</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0008" model="bank">
+            <field name="party" ref="PARTY-PT0008"/>
+            <field name="bic">BAIPPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0008</field>
+        </record>
+
+        <record id="PARTY-PT0010" model="party.party">
+            <field name="name">BANCO BPI, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0010" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0010"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0010" model="party.address">
+            <field name="party" ref="PARTY-PT0010"/>
+            <field name="street">RUA TENENTE VALADIM, 284</field>
+            <field name="zip">4100-476</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0010" model="bank">
+            <field name="party" ref="PARTY-PT0010"/>
+            <field name="bic">BBPIPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0010</field>
+        </record>
+
+        <record id="PARTY-PT0014" model="party.party">
+            <field name="name">BANCO INVEST, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0014" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0014"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0014" model="party.address">
+            <field name="party" ref="PARTY-PT0014"/>
+            <field name="street">AV. ENG. DUARTE PACHECO, TORRE 1, 11</field>
+            <field name="zip">1070-101</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0014" model="bank">
+            <field name="party" ref="PARTY-PT0014"/>
+            <field name="bic">IVVSPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0014</field>
+        </record>
+
+        <record id="PARTY-PT0018" model="party.party">
+            <field name="name">BANCO SANTANDER TOTTA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0018" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0018"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0018" model="bank">
+            <field name="party" ref="PARTY-PT0018"/>
+            <field name="bic">TOTAPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0018</field>
+        </record>
+
+        <record id="PARTY-PT0019" model="party.party">
+            <field name="name">BANCO BILBAO VIZCAYA  ARGENTARIA (PORTUGAL), SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0019" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0019"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0019" model="party.address">
+            <field name="party" ref="PARTY-PT0019"/>
+            <field name="street">AVENIDA DA LIBERDADE, 222</field>
+            <field name="zip">1250-148</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0019" model="bank">
+            <field name="party" ref="PARTY-PT0019"/>
+            <field name="bic">BBVAPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0019</field>
+        </record>
+
+        <record id="PARTY-PT0022" model="party.party">
+            <field name="name">BANCO DO BRASIL AG - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0022" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0022"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0022" model="party.address">
+            <field name="party" ref="PARTY-PT0022"/>
+            <field name="street">AVENIDA DA REPÚBLICA, Nº 35 - 7º</field>
+            <field name="zip">1050-186</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0022" model="bank">
+            <field name="party" ref="PARTY-PT0022"/>
+            <field name="bic">BRASPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0022</field>
+        </record>
+
+        <record id="PARTY-PT0023" model="party.party">
+            <field name="name">BANCO ACTIVOBANK, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0023" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0023"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0023" model="party.address">
+            <field name="party" ref="PARTY-PT0023"/>
+            <field name="street">RUA AUGUSTA, 84</field>
+            <field name="zip">1100-053</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0023" model="bank">
+            <field name="party" ref="PARTY-PT0023"/>
+            <field name="bic">ACTVPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0023</field>
+        </record>
+
+        <record id="PARTY-PT0025" model="party.party">
+            <field name="name">CAIXA - BANCO DE INVESTIMENTO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0025" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0025"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0025" model="party.address">
+            <field name="party" ref="PARTY-PT0025"/>
+            <field name="street">RUA BARATA SALGUEIRO, 33</field>
+            <field name="zip">1269-057</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0025" model="bank">
+            <field name="party" ref="PARTY-PT0025"/>
+            <field name="bic">CXBIPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0025</field>
+        </record>
+
+        <record id="PARTY-PT0027" model="party.party">
+            <field name="name">BANCO PORTUGUES DE INVESTIMENTO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0027" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0027"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0027" model="party.address">
+            <field name="party" ref="PARTY-PT0027"/>
+            <field name="street">RUA TENENTE VALADIM, 284</field>
+            <field name="zip">4100-011</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0027" model="bank">
+            <field name="party" ref="PARTY-PT0027"/>
+            <field name="bic">BPIPPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0027</field>
+        </record>
+
+        <record id="PARTY-PT0032" model="party.party">
+            <field name="name">BARCLAYS BANK, PLC</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0032" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0032"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0032" model="party.address">
+            <field name="party" ref="PARTY-PT0032"/>
+            <field name="street">AVENIDA DO COLÉGIO MILITAR, 37 F, 13.º ANDAR, TORRE ORIENTE</field>
+            <field name="zip">1500-180</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0032" model="bank">
+            <field name="party" ref="PARTY-PT0032"/>
+            <field name="bic">BARCPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0032</field>
+        </record>
+
+        <record id="PARTY-PT0033" model="party.party">
+            <field name="name">BANCO COMERCIAL PORTUGUES, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0033" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0033"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0033" model="party.address">
+            <field name="party" ref="PARTY-PT0033"/>
+            <field name="street">PRAÇA DOM JOÃO I, Nº. 12</field>
+            <field name="zip">4000-295</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0033" model="bank">
+            <field name="party" ref="PARTY-PT0033"/>
+            <field name="bic">BCOMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0033</field>
+        </record>
+
+        <record id="PARTY-PT0035" model="party.party">
+            <field name="name">CAIXA GERAL DE DEPOSITOS, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0035" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0035"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0035" model="party.address">
+            <field name="party" ref="PARTY-PT0035"/>
+            <field name="street">AVENIDA JOÃO XXI, 63</field>
+            <field name="zip">1000-300</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0035" model="bank">
+            <field name="party" ref="PARTY-PT0035"/>
+            <field name="bic">CGDIPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0035</field>
+        </record>
+
+        <record id="PARTY-PT0036" model="party.party">
+            <field name="name">CAIXA ECONOMICA MONTEPIO GERAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0036" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0036"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0036" model="party.address">
+            <field name="party" ref="PARTY-PT0036"/>
+            <field name="street">RUA ÁUREA, 219 a 241</field>
+            <field name="zip">1100-062</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0036" model="bank">
+            <field name="party" ref="PARTY-PT0036"/>
+            <field name="bic">MPIOPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0036</field>
+        </record>
+
+        <record id="PARTY-PT0038" model="party.party">
+            <field name="name">BANIF - BANCO INTERNACIONAL DO FUNCHAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0038" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0038" model="bank">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="bic">BNIFPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0038</field>
+        </record>
+
+        <record id="PARTY-PT0046" model="party.party">
+            <field name="name">BANCO POPULAR PORTUGAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0046" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0046"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0046" model="party.address">
+            <field name="party" ref="PARTY-PT0046"/>
+            <field name="street">EDIFÍCIO SEDE - RUA RAMALHO ORTIGÃO, Nº. 51</field>
+            <field name="zip">1099-090</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0046" model="bank">
+            <field name="party" ref="PARTY-PT0046"/>
+            <field name="bic">CRBNPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0046</field>
+        </record>
+
+        <record id="PARTY-PT0047" model="party.party">
+            <field name="name">HAITONG BANK, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0047" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0047"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0047" model="party.address">
+            <field name="party" ref="PARTY-PT0047"/>
+            <field name="street">RUA ALEXANDRE HERCULANO, 38 - EDIFÍCIO QUARTZO</field>
+            <field name="zip">1269-180</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0047" model="bank">
+            <field name="party" ref="PARTY-PT0047"/>
+            <field name="bic">ESSIPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0047</field>
+        </record>
+
+        <record id="PARTY-PT0048" model="party.party">
+            <field name="name">BANCO FINANTIA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0048" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0048"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0048" model="party.address">
+            <field name="party" ref="PARTY-PT0048"/>
+            <field name="street">RUA GENERAL FIRMINO MIGUEL, 5 - 1º</field>
+            <field name="zip">1600-100</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0048" model="bank">
+            <field name="party" ref="PARTY-PT0048"/>
+            <field name="bic">BFIAPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0048</field>
+        </record>
+
+        <record id="PARTY-PT0059" model="party.party">
+            <field name="name">CAIXA ECONOMICA DA MISERICORDIA DE ANGRA DO HEROISMO</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0059" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0059"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0059" model="party.address">
+            <field name="party" ref="PARTY-PT0059"/>
+            <field name="street">RUA DIREITA, 118</field>
+            <field name="zip">9700-066</field>
+            <field name="city">Angra Do Heroísmo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0059" model="bank">
+            <field name="party" ref="PARTY-PT0059"/>
+            <field name="bic">CEMAPTP2XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0059</field>
+        </record>
+
+        <record id="PARTY-PT0061" model="party.party">
+            <field name="name">BANCO DE INVESTIMENTO GLOBAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0061" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0061"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0061" model="party.address">
+            <field name="party" ref="PARTY-PT0061"/>
+            <field name="street">AVENIDA 24 DE JULHO N.º 74-76</field>
+            <field name="zip">1200-869</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0061" model="bank">
+            <field name="party" ref="PARTY-PT0061"/>
+            <field name="bic">BDIGPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0061</field>
+        </record>
+
+        <record id="PARTY-PT0063" model="party.party">
+            <field name="name">BANIF - BANCO DE INVESTIMENTO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0063" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0063"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0063" model="party.address">
+            <field name="party" ref="PARTY-PT0063"/>
+            <field name="street">AVENIDA 24 DE JULHO, N.º 98</field>
+            <field name="zip">1200-870</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0063" model="bank">
+            <field name="party" ref="PARTY-PT0063"/>
+            <field name="bic">BNFIPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0063</field>
+        </record>
+
+        <record id="PARTY-PT0064" model="party.party">
+            <field name="name">BANCO PORTUGUES DE GESTAO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0064" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0064"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0064" model="party.address">
+            <field name="party" ref="PARTY-PT0064"/>
+            <field name="street">RUA DO SALITRE, Nº 165/167</field>
+            <field name="zip">1250-198</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0064" model="bank">
+            <field name="party" ref="PARTY-PT0064"/>
+            <field name="bic">BPGPPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0064</field>
+        </record>
+
+        <record id="PARTY-PT0065" model="party.party">
+            <field name="name">BEST - BANCO ELECTRONICO DE SERVICO TOTAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0065" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0065"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0065" model="party.address">
+            <field name="party" ref="PARTY-PT0065"/>
+            <field name="street">PRAÇA MARQUÊS DE POMBAL, Nº 3 - 3º PISO</field>
+            <field name="zip">1250-161</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0065" model="bank">
+            <field name="party" ref="PARTY-PT0065"/>
+            <field name="bic">BESZPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0065</field>
+        </record>
+
+        <record id="PARTY-PT0073" model="party.party">
+            <field name="name">BANCO SANTANDER CONSUMER PORTUGAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0073" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0073"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0073" model="party.address">
+            <field name="party" ref="PARTY-PT0073"/>
+            <field name="street">RUA CASTILHO, 2 E 4</field>
+            <field name="zip">1269-073</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0073" model="bank">
+            <field name="party" ref="PARTY-PT0073"/>
+            <field name="bic">IBNBPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0073</field>
+        </record>
+
+        <record id="PARTY-PT0079" model="party.party">
+            <field name="name">BANCO BIC PORTUGUES, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0079" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0079"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0079" model="party.address">
+            <field name="party" ref="PARTY-PT0079"/>
+            <field name="street">AVENIDA ANTÓNIO AUGUSTO DE AGUIAR, N.º 132</field>
+            <field name="zip">1050-020</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0079" model="bank">
+            <field name="party" ref="PARTY-PT0079"/>
+            <field name="bic">BPNPPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0079</field>
+        </record>
+
+        <record id="PARTY-PT0086" model="party.party">
+            <field name="name">BANCO EFISA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0086" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0086"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0086" model="party.address">
+            <field name="party" ref="PARTY-PT0086"/>
+            <field name="street">AVENIDA ANTÓNIO AUGUSTO DE AGUIAR, 132- 4º</field>
+            <field name="zip">1069-437</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0086" model="bank">
+            <field name="party" ref="PARTY-PT0086"/>
+            <field name="bic">EFISPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0086</field>
+        </record>
+
+        <record id="PARTY-PT0097" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA CHAMUSCA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0097" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0097"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0097" model="party.address">
+            <field name="party" ref="PARTY-PT0097"/>
+            <field name="street">RUA DIREITA DE S. PEDRO, 216</field>
+            <field name="zip">2140-098</field>
+            <field name="city">Chamusca</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0097" model="bank">
+            <field name="party" ref="PARTY-PT0097"/>
+            <field name="bic">CCCHPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0097</field>
+        </record>
+
+        <record id="PARTY-PT0098" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BOMBARRAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0098" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0098"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0098" model="party.address">
+            <field name="party" ref="PARTY-PT0098"/>
+            <field name="street">RUA DO COMÉRCIO, 58</field>
+            <field name="zip">2540-076</field>
+            <field name="city">Bombarral</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0098" model="bank">
+            <field name="party" ref="PARTY-PT0098"/>
+            <field name="bic">CERTPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0098</field>
+        </record>
+
+        <record id="PARTY-PT0160" model="party.party">
+            <field name="name">NOVO BANCO DOS ACORES, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0160" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0160"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0160" model="party.address">
+            <field name="party" ref="PARTY-PT0160"/>
+            <field name="street">RUA HINTZE RIBEIRO, NºS 2/8</field>
+            <field name="zip">9500-049</field>
+            <field name="city">Ponta Delgada</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0160" model="bank">
+            <field name="party" ref="PARTY-PT0160"/>
+            <field name="bic">BESAPTPAXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0160</field>
+        </record>
+
+        <record id="PARTY-PT0189" model="party.party">
+            <field name="name">BANCO PRIVADO ATLANTICO - EUROPA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0189" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0189"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0189" model="party.address">
+            <field name="party" ref="PARTY-PT0189"/>
+            <field name="street">AVENIDA DA LIBERDADE, Nº 259</field>
+            <field name="zip">1250-143</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0189" model="bank">
+            <field name="party" ref="PARTY-PT0189"/>
+            <field name="bic">BAPAPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0189</field>
+        </record>
+
+        <record id="PARTY-PT0235" model="party.party">
+            <field name="name">BANCO L.J. CARREGOSA, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0235" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0235"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0235" model="party.address">
+            <field name="party" ref="PARTY-PT0235"/>
+            <field name="street">AVENIDA  DA BOAVISTA, 1083</field>
+            <field name="zip">4100-129</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0235" model="bank">
+            <field name="party" ref="PARTY-PT0235"/>
+            <field name="bic">CAOEPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0235</field>
+        </record>
+
+        <record id="PARTY-PT0698" model="party.party">
+            <field name="name">UNICRE - INSTITUICAO FINANCEIRA DE CREDITO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0698" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0698" model="party.address">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="street">AVENIDA  ANTONIO AUGUSTO DE AGUIAR, 122 - 9º ANDAR</field>
+            <field name="zip">1050-019</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0698" model="bank">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="bic">UIFCPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0698</field>
+        </record>
+
+        <record id="PARTY-PT0781" model="party.party">
+            <field name="name">AGENCIA DE GESTAO DA TESOURARIA E DA DIVIDA PUBLICA - IGCP, E.P.E.</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0781" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0781"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0781" model="bank">
+            <field name="party" ref="PARTY-PT0781"/>
+            <field name="bic">IGCPPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0781</field>
+        </record>
+
+        <record id="PARTY-PT1020" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE AROUCA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1020" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1020"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1020" model="party.address">
+            <field name="party" ref="PARTY-PT1020"/>
+            <field name="street">AVENIDA 25 DE ABRIL, N.º 18-B</field>
+            <field name="zip">4540-102</field>
+            <field name="city">Arouca</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1020" model="bank">
+            <field name="party" ref="PARTY-PT1020"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1020</field>
+        </record>
+
+        <record id="PARTY-PT1280" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO MEDIO AVE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1280" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1280"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1280" model="party.address">
+            <field name="party" ref="PARTY-PT1280"/>
+            <field name="street">RUA JOSÉ LUÍS ANDRADE, 65</field>
+            <field name="zip">4780-487</field>
+            <field name="city">Santo Tirso</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1280" model="bank">
+            <field name="party" ref="PARTY-PT1280"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1280</field>
+        </record>
+
+        <record id="PARTY-PT1290" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VILA VERDE E DE TERRAS DO BOURO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1290" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1290"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1290" model="party.address">
+            <field name="party" ref="PARTY-PT1290"/>
+            <field name="street">PRAÇA 5 DE OUTUBRO, N.º 81</field>
+            <field name="zip">4730-731</field>
+            <field name="city">Vila Verde</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1290" model="bank">
+            <field name="party" ref="PARTY-PT1290"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1290</field>
+        </record>
+
+        <record id="PARTY-PT1320" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DO SOUSA, AVE, BASTO E TAMEGA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1320" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1320"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1320" model="party.address">
+            <field name="party" ref="PARTY-PT1320"/>
+            <field name="street">PRAÇA DA REPÚBLICA N.º 228</field>
+            <field name="zip">4610-116</field>
+            <field name="city">Felgueiras</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1320" model="bank">
+            <field name="party" ref="PARTY-PT1320"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1320</field>
+        </record>
+
+        <record id="PARTY-PT1340" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO SOUSA E BAIXO TAMEGA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1340" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1340"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1340" model="party.address">
+            <field name="party" ref="PARTY-PT1340"/>
+            <field name="street">LARGO DA DEVESA</field>
+            <field name="zip">4560-496</field>
+            <field name="city">Penafiel</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1340" model="bank">
+            <field name="party" ref="PARTY-PT1340"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1340</field>
+        </record>
+
+        <record id="PARTY-PT1400" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PAREDES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1400" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1400"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1400" model="party.address">
+            <field name="party" ref="PARTY-PT1400"/>
+            <field name="street">AVENIDA COMENDADOR ABÍLIO SEABRA, 138</field>
+            <field name="zip">4580-029</field>
+            <field name="city">Paredes</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1400" model="bank">
+            <field name="party" ref="PARTY-PT1400"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1400</field>
+        </record>
+
+        <record id="PARTY-PT1420" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NOROESTE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1420" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1420"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1420" model="party.address">
+            <field name="party" ref="PARTY-PT1420"/>
+            <field name="street">PRACETA DR. FRANCISCO SÁ CARNEIRO</field>
+            <field name="zip">4750-297</field>
+            <field name="city">Barcelos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1420" model="bank">
+            <field name="party" ref="PARTY-PT1420"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1420</field>
+        </record>
+
+        <record id="PARTY-PT1440" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA AREA METROPOLITANA DO PORTO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1440" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1440"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1440" model="party.address">
+            <field name="party" ref="PARTY-PT1440"/>
+            <field name="street">AVENIDA VISCONDE DE BARREIROS, Nº 85</field>
+            <field name="zip">4470-151</field>
+            <field name="city">Maia</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1440" model="bank">
+            <field name="party" ref="PARTY-PT1440"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1440</field>
+        </record>
+
+        <record id="PARTY-PT1460" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE POVOA DE VARZIM,VILA DO CONDE E ESPOSENDE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1460" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1460"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1460" model="party.address">
+            <field name="party" ref="PARTY-PT1460"/>
+            <field name="street">LARGO DAS DORES, 1</field>
+            <field name="zip">4490-421</field>
+            <field name="city">Póvoa De Varzim</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1460" model="bank">
+            <field name="party" ref="PARTY-PT1460"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1460</field>
+        </record>
+
+        <record id="PARTY-PT1470" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO CAVADO E BASTO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT1470" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT1470"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT1470" model="party.address">
+            <field name="party" ref="PARTY-PT1470"/>
+            <field name="street">PRAÇA DO COMÉRCIO, N.º 61 E 63, FERREIROS</field>
+            <field name="zip">4720-337</field>
+            <field name="city">Ferreiros</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT1470" model="bank">
+            <field name="party" ref="PARTY-PT1470"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT1470</field>
+        </record>
+
+        <record id="PARTY-PT2040" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO DOURO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2040" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2040"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2040" model="party.address">
+            <field name="party" ref="PARTY-PT2040"/>
+            <field name="street">AVENIDA JOÃO DA CRUZ, 94/98</field>
+            <field name="zip">5300-178</field>
+            <field name="city">Bragança</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2040" model="bank">
+            <field name="party" ref="PARTY-PT2040"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2040</field>
+        </record>
+
+        <record id="PARTY-PT2090" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO BEIRA DOURO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2090" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2090"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2090" model="party.address">
+            <field name="party" ref="PARTY-PT2090"/>
+            <field name="street">AVENIDA 5 DE OUTUBRO, Nº 73</field>
+            <field name="zip">5100-065</field>
+            <field name="city">Lamego</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2090" model="bank">
+            <field name="party" ref="PARTY-PT2090"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2090</field>
+        </record>
+
+        <record id="PARTY-PT2140" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO DOURO E COA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2140" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2140"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2140" model="party.address">
+            <field name="party" ref="PARTY-PT2140"/>
+            <field name="street">AVENIDA BARÃO DE FORRESTER, N.º 45</field>
+            <field name="zip">5130-570</field>
+            <field name="city">S. João Da Pesqueira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2140" model="bank">
+            <field name="party" ref="PARTY-PT2140"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2140</field>
+        </record>
+
+        <record id="PARTY-PT2160" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO TAVORA E DOURO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2160" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2160"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2160" model="party.address">
+            <field name="party" ref="PARTY-PT2160"/>
+            <field name="street">RUA SÁ DE ALBERGARIA</field>
+            <field name="zip">5120-423</field>
+            <field name="city">Tabuaço</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2160" model="bank">
+            <field name="party" ref="PARTY-PT2160"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2160</field>
+        </record>
+
+        <record id="PARTY-PT2190" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA TERRA QUENTE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2190" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2190"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2190" model="party.address">
+            <field name="party" ref="PARTY-PT2190"/>
+            <field name="street">RUA LUÍS DE CAMÕES</field>
+            <field name="zip">5140-080</field>
+            <field name="city">Carrazeda De Ansiães</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2190" model="bank">
+            <field name="party" ref="PARTY-PT2190"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2190</field>
+        </record>
+
+        <record id="PARTY-PT2230" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TRAS-OS-MONTES E ALTO DOURO, C.R.L</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2230" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2230"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2230" model="party.address">
+            <field name="party" ref="PARTY-PT2230"/>
+            <field name="street">RUA DOS CAMILOS, 249</field>
+            <field name="zip">5050-273</field>
+            <field name="city">Peso Da Régua</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2230" model="bank">
+            <field name="party" ref="PARTY-PT2230"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2230</field>
+        </record>
+
+        <record id="PARTY-PT2240" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MOGADOURO E VIMIOSO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2240" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2240"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2240" model="party.address">
+            <field name="party" ref="PARTY-PT2240"/>
+            <field name="street">AVENIDA DO SABOR, 59/61</field>
+            <field name="zip">5200-204</field>
+            <field name="city">Mogadouro</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2240" model="bank">
+            <field name="party" ref="PARTY-PT2240"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2240</field>
+        </record>
+
+        <record id="PARTY-PT2260" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DE MIRANDA DO DOURO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT2260" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT2260"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT2260" model="party.address">
+            <field name="party" ref="PARTY-PT2260"/>
+            <field name="street">RUA DA INDÚSTRIA</field>
+            <field name="zip">5225-032</field>
+            <field name="city">Palaçoulo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT2260" model="bank">
+            <field name="party" ref="PARTY-PT2260"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT2260</field>
+        </record>
+
+        <record id="PARTY-PT3010" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO MONDEGO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3010" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3010"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3010" model="party.address">
+            <field name="party" ref="PARTY-PT3010"/>
+            <field name="street">LARGO DA CAIXA AGRÍCOLA, N.º 2</field>
+            <field name="zip">3140-011</field>
+            <field name="city">Montemor-O-Velho</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3010" model="bank">
+            <field name="party" ref="PARTY-PT3010"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3010</field>
+        </record>
+
+        <record id="PARTY-PT3020" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CANTANHEDE E MIRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3020" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3020"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3020" model="party.address">
+            <field name="party" ref="PARTY-PT3020"/>
+            <field name="street">RUA DOS BOMBEIROS VOLUNTÁRIOS, N.º 6</field>
+            <field name="zip">3060-163</field>
+            <field name="city">Cantanhede</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3020" model="bank">
+            <field name="party" ref="PARTY-PT3020"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3020</field>
+        </record>
+
+        <record id="PARTY-PT3030" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE COIMBRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3030" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3030"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3030" model="party.address">
+            <field name="party" ref="PARTY-PT3030"/>
+            <field name="street">RUA JOÃO MACHADO, Nº 78</field>
+            <field name="zip">3000-226</field>
+            <field name="city">Coimbra</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3030" model="bank">
+            <field name="party" ref="PARTY-PT3030"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3030</field>
+        </record>
+
+        <record id="PARTY-PT3060" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO DAO  E ALTO VOUGA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3060" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3060"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3060" model="party.address">
+            <field name="party" ref="PARTY-PT3060"/>
+            <field name="street">AVENIDA DA LIBERDADE, 62/64</field>
+            <field name="zip">3530-113</field>
+            <field name="city">Mangualde</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3060" model="bank">
+            <field name="party" ref="PARTY-PT3060"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3060</field>
+        </record>
+
+        <record id="PARTY-PT3090" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DE AZEMEIS E ESTARREJA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3090" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3090"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3090" model="party.address">
+            <field name="party" ref="PARTY-PT3090"/>
+            <field name="street">RUA LUÍS DE CAMÕES, 76</field>
+            <field name="zip">3720-230</field>
+            <field name="city">Oliveira De Azeméis</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3090" model="bank">
+            <field name="party" ref="PARTY-PT3090"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3090</field>
+        </record>
+
+        <record id="PARTY-PT3110" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE POMBAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3110" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3110"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3110" model="party.address">
+            <field name="party" ref="PARTY-PT3110"/>
+            <field name="street">PRAÇA DA REPÚBLICA</field>
+            <field name="zip">3100-411</field>
+            <field name="city">Pombal</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3110" model="bank">
+            <field name="party" ref="PARTY-PT3110"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3110</field>
+        </record>
+
+        <record id="PARTY-PT3160" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VALE DE CAMBRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3160" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3160"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3160" model="party.address">
+            <field name="party" ref="PARTY-PT3160"/>
+            <field name="street">RUA DR. DOMINGOS DE ALMEIDA BRANDÃO, Nº 289</field>
+            <field name="zip">3730-251</field>
+            <field name="city">Vale De Cambra</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3160" model="bank">
+            <field name="party" ref="PARTY-PT3160"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3160</field>
+        </record>
+
+        <record id="PARTY-PT3190" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LAFOES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3190" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3190"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3190" model="party.address">
+            <field name="party" ref="PARTY-PT3190"/>
+            <field name="street">RUA SERPA PINTO, EDIFÍCIO JARDIM</field>
+            <field name="zip">3660-512</field>
+            <field name="city">S. Pedro Do Sul</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3190" model="bank">
+            <field name="party" ref="PARTY-PT3190"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3190</field>
+        </record>
+
+        <record id="PARTY-PT3210" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO BAIRRO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3210" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3210"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3210" model="party.address">
+            <field name="party" ref="PARTY-PT3210"/>
+            <field name="street">RUA DO FORAL, N.º 59</field>
+            <field name="zip">3770-218</field>
+            <field name="city">Oliveira Do Bairro</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3210" model="bank">
+            <field name="party" ref="PARTY-PT3210"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3210</field>
+        </record>
+
+        <record id="PARTY-PT3220" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA VERDE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3220" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3220"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3220" model="party.address">
+            <field name="party" ref="PARTY-PT3220"/>
+            <field name="street">RUA ANTÓNIO CORREIA DE CARVALHO, Nº. 188</field>
+            <field name="zip">4400-023</field>
+            <field name="city">Vila Nova De Gaia</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3220" model="bank">
+            <field name="party" ref="PARTY-PT3220"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3220</field>
+        </record>
+
+        <record id="PARTY-PT3240" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO VOUGA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3240" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3240"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3240" model="party.address">
+            <field name="party" ref="PARTY-PT3240"/>
+            <field name="street">PRACETA ENG.º MANUEL SIMÕES PONTES</field>
+            <field name="zip">3810-195</field>
+            <field name="city">Aveiro</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3240" model="bank">
+            <field name="party" ref="PARTY-PT3240"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3240</field>
+        </record>
+
+        <record id="PARTY-PT3270" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ANADIA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3270" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3270"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3270" model="party.address">
+            <field name="party" ref="PARTY-PT3270"/>
+            <field name="street">AVENIDA DO CABECINHO, S/N</field>
+            <field name="zip">3780-203</field>
+            <field name="city">Anadia</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3270" model="bank">
+            <field name="party" ref="PARTY-PT3270"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3270</field>
+        </record>
+
+        <record id="PARTY-PT3310" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALBERGARIA E SEVER, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3310" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3310"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3310" model="party.address">
+            <field name="party" ref="PARTY-PT3310"/>
+            <field name="street">RUA ALMIRANTE REIS, 10</field>
+            <field name="zip">3850-121</field>
+            <field name="city">Albergaria-A-Velha</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3310" model="bank">
+            <field name="party" ref="PARTY-PT3310"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3310</field>
+        </record>
+
+        <record id="PARTY-PT3340" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VAGOS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3340" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3340"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3340" model="party.address">
+            <field name="party" ref="PARTY-PT3340"/>
+            <field name="street">RUA  PADRE VICENTE MARIA DA ROCHA</field>
+            <field name="zip">3840-453</field>
+            <field name="city">Vagos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3340" model="bank">
+            <field name="party" ref="PARTY-PT3340"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3340</field>
+        </record>
+
+        <record id="PARTY-PT3370" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DAS SERRAS DE ANSIAO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3370" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3370"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3370" model="party.address">
+            <field name="party" ref="PARTY-PT3370"/>
+            <field name="street">RUA ADRIANO REGO, 14</field>
+            <field name="zip">3240-126</field>
+            <field name="city">Ansião</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3370" model="bank">
+            <field name="party" ref="PARTY-PT3370"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3370</field>
+        </record>
+
+        <record id="PARTY-PT3380" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO HOSPITAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3380" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3380"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3380" model="party.address">
+            <field name="party" ref="PARTY-PT3380"/>
+            <field name="street">RUA PROFESSOR ANTÓNIO RIBEIRO GARCIA DE VASCONCELOS, N.º 9-C</field>
+            <field name="zip">3400-132</field>
+            <field name="city">Oliveira Do Hospital</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3380" model="bank">
+            <field name="party" ref="PARTY-PT3380"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3380</field>
+        </record>
+
+        <record id="PARTY-PT3400" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BAIRRADA E AGUIEIRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3400" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3400"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3400" model="party.address">
+            <field name="party" ref="PARTY-PT3400"/>
+            <field name="street">RUA BRANQUINHO CARVALHO</field>
+            <field name="zip">3050-335</field>
+            <field name="city">Mealhada</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3400" model="bank">
+            <field name="party" ref="PARTY-PT3400"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3400</field>
+        </record>
+
+        <record id="PARTY-PT3450" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO BEIRA CENTRO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3450" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3450"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3450" model="party.address">
+            <field name="party" ref="PARTY-PT3450"/>
+            <field name="street">AVENIDA DAS FORÇAS ARMADAS, S/ N.º</field>
+            <field name="zip">3300-011</field>
+            <field name="city">Arganil</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3450" model="bank">
+            <field name="party" ref="PARTY-PT3450"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3450</field>
+        </record>
+
+        <record id="PARTY-PT3470" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DE VIRIATO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT3470" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT3470"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT3470" model="party.address">
+            <field name="party" ref="PARTY-PT3470"/>
+            <field name="street">PRAÇA DO MUNÍCIPIO</field>
+            <field name="zip">3520-001</field>
+            <field name="city">Nelas</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT3470" model="bank">
+            <field name="party" ref="PARTY-PT3470"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT3470</field>
+        </record>
+
+        <record id="PARTY-PT4020" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA REGIAO DO FUNDAO E SABUGAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT4020" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT4020"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT4020" model="party.address">
+            <field name="party" ref="PARTY-PT4020"/>
+            <field name="street">RUA DOS TRÊS LAGARES</field>
+            <field name="zip">6230-421</field>
+            <field name="city">Fundão</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT4020" model="bank">
+            <field name="party" ref="PARTY-PT4020"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT4020</field>
+        </record>
+
+        <record id="PARTY-PT4050" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BEIRA BAIXA (SUL), CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT4050" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT4050"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT4050" model="party.address">
+            <field name="party" ref="PARTY-PT4050"/>
+            <field name="street">LARGO DO MUNICÍPIO</field>
+            <field name="zip">6060-163</field>
+            <field name="city">Idanha-A-Nova</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT4050" model="bank">
+            <field name="party" ref="PARTY-PT4050"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT4050</field>
+        </record>
+
+        <record id="PARTY-PT4080" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA SERRA DA ESTRELA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT4080" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT4080"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT4080" model="party.address">
+            <field name="party" ref="PARTY-PT4080"/>
+            <field name="street">LARGO MARQUES DA SILVA</field>
+            <field name="zip">6270-490</field>
+            <field name="city">Seia</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT4080" model="bank">
+            <field name="party" ref="PARTY-PT4080"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT4080</field>
+        </record>
+
+        <record id="PARTY-PT4110" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA ZONA DO PINHAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT4110" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT4110"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT4110" model="party.address">
+            <field name="party" ref="PARTY-PT4110"/>
+            <field name="street">PRAÇA DA REPÚBLICA, 31</field>
+            <field name="zip">6100-740</field>
+            <field name="city">Sertã</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT4110" model="bank">
+            <field name="party" ref="PARTY-PT4110"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT4110</field>
+        </record>
+
+        <record id="PARTY-PT5010" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALCANHOES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5010" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5010" model="party.address">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="street">RUA PAULINHO DA CUNHA E SILVA, 260</field>
+            <field name="zip">2000-369</field>
+            <field name="city">Santarém</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5010" model="bank">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5010</field>
+        </record>
+
+        <record id="PARTY-PT5020" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALCOBACA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5020" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5020"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5020" model="party.address">
+            <field name="party" ref="PARTY-PT5020"/>
+            <field name="street">RUA DR. BRILHANTE, NºS 20 E 22</field>
+            <field name="zip">2460-040</field>
+            <field name="city">Alcobaça</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5020" model="bank">
+            <field name="party" ref="PARTY-PT5020"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5020</field>
+        </record>
+
+        <record id="PARTY-PT5050" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALENQUER, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5050" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5050"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5050" model="party.address">
+            <field name="party" ref="PARTY-PT5050"/>
+            <field name="street">RUA SACADURA CABRAL, 53 A/AVENIDA 25 DE ABRIL, 22/22 A</field>
+            <field name="zip">2580-371</field>
+            <field name="city">Alenquer</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5050" model="bank">
+            <field name="party" ref="PARTY-PT5050"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5050</field>
+        </record>
+
+        <record id="PARTY-PT5060" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ARRUDA DOS VINHOS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5060" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5060"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5060" model="party.address">
+            <field name="party" ref="PARTY-PT5060"/>
+            <field name="street">RUA IRENE LISBOA, 3 - R/C</field>
+            <field name="zip">2630-246</field>
+            <field name="city">Arruda Dos Vinhos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5060" model="bank">
+            <field name="party" ref="PARTY-PT5060"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5060</field>
+        </record>
+
+        <record id="PARTY-PT5070" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE AZAMBUJA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5070" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5070"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5070" model="party.address">
+            <field name="party" ref="PARTY-PT5070"/>
+            <field name="street">RUA ENGº MONIZ DA MAIA, 57-A</field>
+            <field name="zip">2050-354</field>
+            <field name="city">Azambuja</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5070" model="bank">
+            <field name="party" ref="PARTY-PT5070"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5070</field>
+        </record>
+
+        <record id="PARTY-PT5080" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BATALHA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5080" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5080"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5080" model="party.address">
+            <field name="party" ref="PARTY-PT5080"/>
+            <field name="street">RUA DO INFANTE D. FERNANDO, Nº 2</field>
+            <field name="zip">2440-118</field>
+            <field name="city">Batalha</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5080" model="bank">
+            <field name="party" ref="PARTY-PT5080"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5080</field>
+        </record>
+
+        <record id="PARTY-PT5120" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CADAVAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5120" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5120"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5120" model="party.address">
+            <field name="party" ref="PARTY-PT5120"/>
+            <field name="street">RUA DOS BOMBEIROS VOLUNTÁRIOS, 36</field>
+            <field name="zip">2550-102</field>
+            <field name="city">Cadaval</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5120" model="bank">
+            <field name="party" ref="PARTY-PT5120"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5120</field>
+        </record>
+
+        <record id="PARTY-PT5130" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CALDAS DA RAINHA, OBIDOS E PENICHE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5130" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5130"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5130" model="party.address">
+            <field name="party" ref="PARTY-PT5130"/>
+            <field name="street">RUA CORONEL SOEIRO DE BRITO, 24</field>
+            <field name="zip">2500-149</field>
+            <field name="city">Caldas Da Rainha</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5130" model="bank">
+            <field name="party" ref="PARTY-PT5130"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5130</field>
+        </record>
+
+        <record id="PARTY-PT5140" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LOURES, SINTRA E LITORAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5140" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5140"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5140" model="party.address">
+            <field name="party" ref="PARTY-PT5140"/>
+            <field name="street">AVENIDA DOS COMBATENTES DA GRANDE GUERRA, 8-A</field>
+            <field name="zip">2670-426</field>
+            <field name="city">Loures</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5140" model="bank">
+            <field name="party" ref="PARTY-PT5140"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5140</field>
+        </record>
+
+        <record id="PARTY-PT5150" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO CARTAXO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5150" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5150"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5150" model="party.address">
+            <field name="party" ref="PARTY-PT5150"/>
+            <field name="street">RUA 5 DE OUTUBRO, 5 - G</field>
+            <field name="zip">2070-059</field>
+            <field name="city">Cartaxo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5150" model="bank">
+            <field name="party" ref="PARTY-PT5150"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5150</field>
+        </record>
+
+        <record id="PARTY-PT5170" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CORUCHE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5170" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5170"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5170" model="party.address">
+            <field name="party" ref="PARTY-PT5170"/>
+            <field name="street">RUA DA MISERICÓRDIA 36</field>
+            <field name="zip">2100-134</field>
+            <field name="city">Coruche</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5170" model="bank">
+            <field name="party" ref="PARTY-PT5170"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5170</field>
+        </record>
+
+        <record id="PARTY-PT5180" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LEIRIA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5180" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5180"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5180" model="party.address">
+            <field name="party" ref="PARTY-PT5180"/>
+            <field name="street">LARGO CÂNDIDO DOS REIS, Nºs. 19 A 25</field>
+            <field name="zip">2400-112</field>
+            <field name="city">Leiria</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5180" model="bank">
+            <field name="party" ref="PARTY-PT5180"/>
+            <field name="bic">CDCTPTP2XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5180</field>
+        </record>
+
+        <record id="PARTY-PT5190" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LOURINHA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5190" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5190"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5190" model="party.address">
+            <field name="party" ref="PARTY-PT5190"/>
+            <field name="street">LARGO DA REPÚBLICA, 14</field>
+            <field name="zip">2530-120</field>
+            <field name="city">Lourinhã</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5190" model="bank">
+            <field name="party" ref="PARTY-PT5190"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5190</field>
+        </record>
+
+        <record id="PARTY-PT5200" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MAFRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5200" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5200"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5200" model="party.address">
+            <field name="party" ref="PARTY-PT5200"/>
+            <field name="street">TERREIRO D. JOÃO V</field>
+            <field name="zip">2640-492</field>
+            <field name="city">Mafra</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5200" model="bank">
+            <field name="party" ref="PARTY-PT5200"/>
+            <field name="bic">CDOTPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5200</field>
+        </record>
+
+        <record id="PARTY-PT5230" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PERNES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5230" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5230"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5230" model="party.address">
+            <field name="party" ref="PARTY-PT5230"/>
+            <field name="street">RUA ENG. ANTÓNIO TORRES, 140/140-A</field>
+            <field name="zip">2000-495</field>
+            <field name="city">Pernes</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5230" model="bank">
+            <field name="party" ref="PARTY-PT5230"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5230</field>
+        </record>
+
+        <record id="PARTY-PT5240" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PORTO DE MOS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5240" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5240"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5240" model="party.address">
+            <field name="party" ref="PARTY-PT5240"/>
+            <field name="street">AVENIDA DE SANTO ANTÓNIO, 20-C</field>
+            <field name="zip">2480-860</field>
+            <field name="city">Porto De Mós</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5240" model="bank">
+            <field name="party" ref="PARTY-PT5240"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5240</field>
+        </record>
+
+        <record id="PARTY-PT5270" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SALVATERRA DE MAGOS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5270" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5270"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5270" model="party.address">
+            <field name="party" ref="PARTY-PT5270"/>
+            <field name="street">AVENIDA DR. ROBERTO FERREIRA FONSECA, N.º 60 A</field>
+            <field name="zip">2120-117</field>
+            <field name="city">Salvaterra De Magos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5270" model="bank">
+            <field name="party" ref="PARTY-PT5270"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5270</field>
+        </record>
+
+        <record id="PARTY-PT5310" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SOBRAL DE MONTE AGRACO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5310" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5310"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5310" model="party.address">
+            <field name="party" ref="PARTY-PT5310"/>
+            <field name="street">AVENIDA MARQUÊS DE POMBAL, 27/29</field>
+            <field name="zip">2590-041</field>
+            <field name="city">Sobral De Monte Agraço</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5310" model="bank">
+            <field name="party" ref="PARTY-PT5310"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5310</field>
+        </record>
+
+        <record id="PARTY-PT5340" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TORRES VEDRAS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5340" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5340"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5340" model="party.address">
+            <field name="party" ref="PARTY-PT5340"/>
+            <field name="street">RUA SANTOS BERNARDES, 16-A</field>
+            <field name="zip">2560-362</field>
+            <field name="city">Torres Vedras</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5340" model="bank">
+            <field name="party" ref="PARTY-PT5340"/>
+            <field name="bic">CTIUPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5340</field>
+        </record>
+
+        <record id="PARTY-PT5360" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VILA FRANCA DE XIRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5360" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5360"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5360" model="party.address">
+            <field name="party" ref="PARTY-PT5360"/>
+            <field name="street">LARGO MARQUÊS DE POMBAL, 1/2</field>
+            <field name="zip">2600-222</field>
+            <field name="city">Vila Franca De Xira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5360" model="bank">
+            <field name="party" ref="PARTY-PT5360"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5360</field>
+        </record>
+
+        <record id="PARTY-PT5430" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO NORTE E TRAMAGAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5430" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5430"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5430" model="party.address">
+            <field name="party" ref="PARTY-PT5430"/>
+            <field name="street">PRAÇA 5 DE OUTUBRO, 37</field>
+            <field name="zip">2350-418</field>
+            <field name="city">Torres Novas</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5430" model="bank">
+            <field name="party" ref="PARTY-PT5430"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5430</field>
+        </record>
+
+        <record id="PARTY-PT5460" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ENTRE TEJO E SADO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5460" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5460"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5460" model="party.address">
+            <field name="party" ref="PARTY-PT5460"/>
+            <field name="street">AV.ª D. JOÃO IV, Nº 2</field>
+            <field name="zip">2870-155</field>
+            <field name="city">Montijo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5460" model="bank">
+            <field name="party" ref="PARTY-PT5460"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5460</field>
+        </record>
+
+        <record id="PARTY-PT5470" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO SUL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5470" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5470"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5470" model="party.address">
+            <field name="party" ref="PARTY-PT5470"/>
+            <field name="street">RUA DIREITA, 99</field>
+            <field name="zip">2090-329</field>
+            <field name="city">Benfica Do Ribatejo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5470" model="bank">
+            <field name="party" ref="PARTY-PT5470"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5470</field>
+        </record>
+
+        <record id="PARTY-PT6020" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALCACER DO SAL E MONTEMOR-O-NOVO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6020" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6020"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6020" model="party.address">
+            <field name="party" ref="PARTY-PT6020"/>
+            <field name="street">AVENIDA DOS AVIADORES, 28</field>
+            <field name="zip">7580-151</field>
+            <field name="city">Alcácer Do Sal</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6020" model="bank">
+            <field name="party" ref="PARTY-PT6020"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6020</field>
+        </record>
+
+        <record id="PARTY-PT6040" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALJUSTREL E ALMODOVAR, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6040" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6040"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6040" model="party.address">
+            <field name="party" ref="PARTY-PT6040"/>
+            <field name="street">RUA JOSÉ FRANCISCO DA SILVA ÁLVARO, 4</field>
+            <field name="zip">7600-105</field>
+            <field name="city">Aljustrel</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6040" model="bank">
+            <field name="party" ref="PARTY-PT6040"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6040</field>
+        </record>
+
+        <record id="PARTY-PT6100" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BEJA E MERTOLA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6100" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6100"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6100" model="party.address">
+            <field name="party" ref="PARTY-PT6100"/>
+            <field name="street">LARGO ENG. DUARTE PACHECO, 12</field>
+            <field name="zip">7800-019</field>
+            <field name="city">Beja</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6100" model="bank">
+            <field name="party" ref="PARTY-PT6100"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6100</field>
+        </record>
+
+        <record id="PARTY-PT6110" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BORBA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6110" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6110"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6110" model="party.address">
+            <field name="party" ref="PARTY-PT6110"/>
+            <field name="street">AVENIDA DO POVO, 48/52-FREGUESIA MATRIZ</field>
+            <field name="zip">7150-103</field>
+            <field name="city">Borba</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6110" model="bank">
+            <field name="party" ref="PARTY-PT6110"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6110</field>
+        </record>
+
+        <record id="PARTY-PT6150" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NORDESTE ALENTEJANO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6150" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6150"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6150" model="party.address">
+            <field name="party" ref="PARTY-PT6150"/>
+            <field name="street">RUA DOM NUNO ÁLVARES PEREIRA, N.º 35</field>
+            <field name="zip">7300-200</field>
+            <field name="city">Portalegre</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6150" model="bank">
+            <field name="party" ref="PARTY-PT6150"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6150</field>
+        </record>
+
+        <record id="PARTY-PT6160" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ELVAS E CAMPO MAIOR, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6160" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6160"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6160" model="party.address">
+            <field name="party" ref="PARTY-PT6160"/>
+            <field name="street">RUA DE OLIVENÇA, 7</field>
+            <field name="zip">7350-075</field>
+            <field name="city">Elvas</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6160" model="bank">
+            <field name="party" ref="PARTY-PT6160"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6160</field>
+        </record>
+
+        <record id="PARTY-PT6170" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ESTREMOZ, MONFORTE E ARRONCHES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6170" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6170"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6170" model="party.address">
+            <field name="party" ref="PARTY-PT6170"/>
+            <field name="street">LARGO DA REPÚBLICA, 1/2</field>
+            <field name="zip">7100-505</field>
+            <field name="city">Estremoz</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6170" model="bank">
+            <field name="party" ref="PARTY-PT6170"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6170</field>
+        </record>
+
+        <record id="PARTY-PT6190" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE FERREIRA DO ALENTEJO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6190" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6190"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6190" model="party.address">
+            <field name="party" ref="PARTY-PT6190"/>
+            <field name="street">AVENIDA GENERAL HUMBERTO DELGADO, 40</field>
+            <field name="zip">7900-554</field>
+            <field name="city">Ferreira Do Alentejo</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6190" model="bank">
+            <field name="party" ref="PARTY-PT6190"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6190</field>
+        </record>
+
+        <record id="PARTY-PT6240" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MORAVIS, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6240" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6240"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6240" model="party.address">
+            <field name="party" ref="PARTY-PT6240"/>
+            <field name="street">PRAÇA  CONSELHEIRO FERNANDO SOUSA</field>
+            <field name="zip">7490-221</field>
+            <field name="city">Mora</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6240" model="bank">
+            <field name="party" ref="PARTY-PT6240"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6240</field>
+        </record>
+
+        <record id="PARTY-PT6250" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO GUADIANA INTERIOR, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6250" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6250"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6250" model="party.address">
+            <field name="party" ref="PARTY-PT6250"/>
+            <field name="street">RUA DAS TERÇARIAS, S/N</field>
+            <field name="zip">7860-035</field>
+            <field name="city">Moura</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6250" model="bank">
+            <field name="party" ref="PARTY-PT6250"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6250</field>
+        </record>
+
+        <record id="PARTY-PT6320" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA AZUL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6320" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6320"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6320" model="party.address">
+            <field name="party" ref="PARTY-PT6320"/>
+            <field name="street">AVENIDA D.NUNO ÁLVARES PEREIRA, 2</field>
+            <field name="zip">7540-102</field>
+            <field name="city">Santiago Do Cacém</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6320" model="bank">
+            <field name="party" ref="PARTY-PT6320"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6320</field>
+        </record>
+
+        <record id="PARTY-PT6330" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SAO TEOTONIO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6330" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6330"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6330" model="party.address">
+            <field name="party" ref="PARTY-PT6330"/>
+            <field name="street">RUA 25 DE ABRIL, 8</field>
+            <field name="zip">7630-611</field>
+            <field name="city">S. Teotónio</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6330" model="bank">
+            <field name="party" ref="PARTY-PT6330"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6330</field>
+        </record>
+
+        <record id="PARTY-PT6350" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SOUSEL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6350" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6350"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6350" model="party.address">
+            <field name="party" ref="PARTY-PT6350"/>
+            <field name="street">PRAÇA DA REPÚBLICA</field>
+            <field name="zip">7470-220</field>
+            <field name="city">Sousel</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6350" model="bank">
+            <field name="party" ref="PARTY-PT6350"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6350</field>
+        </record>
+
+        <record id="PARTY-PT6430" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NORTE ALENTEJANO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6430" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6430"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6430" model="party.address">
+            <field name="party" ref="PARTY-PT6430"/>
+            <field name="street">RUA DA LAGOA, 14</field>
+            <field name="zip">7460-116</field>
+            <field name="city">Fronteira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6430" model="bank">
+            <field name="party" ref="PARTY-PT6430"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6430</field>
+        </record>
+
+        <record id="PARTY-PT6440" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALENTEJO CENTRAL, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT6440" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT6440"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT6440" model="party.address">
+            <field name="party" ref="PARTY-PT6440"/>
+            <field name="street">PRAÇA DO GIRALDO, 12/15</field>
+            <field name="zip">7000-508</field>
+            <field name="city">Évora</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT6440" model="bank">
+            <field name="party" ref="PARTY-PT6440"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT6440</field>
+        </record>
+
+        <record id="PARTY-PT7010" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALBUFEIRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7010" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7010"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7010" model="party.address">
+            <field name="party" ref="PARTY-PT7010"/>
+            <field name="street">RUA 5 DE OUTUBRO, Nº 1 - A</field>
+            <field name="zip">8200-508</field>
+            <field name="city">Paderne</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7010" model="bank">
+            <field name="party" ref="PARTY-PT7010"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7010</field>
+        </record>
+
+        <record id="PARTY-PT7120" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SAO BARTOLOMEU DE MESSINES E SAO MARCOS DA SERRA, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7120" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7120"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7120" model="party.address">
+            <field name="party" ref="PARTY-PT7120"/>
+            <field name="street">RUA DA LIBERDADE, 48/52</field>
+            <field name="zip">8375-109</field>
+            <field name="city">S. Bartolomeu De Messines</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7120" model="bank">
+            <field name="party" ref="PARTY-PT7120"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7120</field>
+        </record>
+
+        <record id="PARTY-PT7130" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SILVES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7130" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7130"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7130" model="party.address">
+            <field name="party" ref="PARTY-PT7130"/>
+            <field name="street">RUA COMENDADOR VILARINHO, 22</field>
+            <field name="zip">8300-128</field>
+            <field name="city">Silves</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7130" model="bank">
+            <field name="party" ref="PARTY-PT7130"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7130</field>
+        </record>
+
+        <record id="PARTY-PT7140" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO SOTAVENTO ALGARVIO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7140" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7140"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7140" model="party.address">
+            <field name="party" ref="PARTY-PT7140"/>
+            <field name="street">RUA  BORDA DE ÁGUA DE AGUIAR, 1</field>
+            <field name="zip">8800-326</field>
+            <field name="city">Tavira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7140" model="bank">
+            <field name="party" ref="PARTY-PT7140"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7140</field>
+        </record>
+
+        <record id="PARTY-PT7210" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALGARVE, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7210" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7210"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7210" model="party.address">
+            <field name="party" ref="PARTY-PT7210"/>
+            <field name="street">RUA DE SANTO ANTÓNIO,  Nº 123</field>
+            <field name="zip">8000-284</field>
+            <field name="city">Faro</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7210" model="bank">
+            <field name="party" ref="PARTY-PT7210"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7210</field>
+        </record>
+
+        <record id="PARTY-PT8050" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DOS ACORES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT8050" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT8050"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT8050" model="party.address">
+            <field name="party" ref="PARTY-PT8050"/>
+            <field name="street">RUA MANUEL INÁCIO CORREIA 15/LARGO DA MATRIZ, 35</field>
+            <field name="zip">9500-094</field>
+            <field name="city">Ponta Delgada</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT8050" model="bank">
+            <field name="party" ref="PARTY-PT8050"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT8050</field>
+        </record>
+
+        <record id="PARTY-PT9000" model="party.party">
+            <field name="name">CAIXA CENTRAL - CAIXA CENTRAL DE CREDITO AGRICOLA MUTUO, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT9000" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT9000"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT9000" model="party.address">
+            <field name="party" ref="PARTY-PT9000"/>
+            <field name="street">RUA CASTILHO, 233/233 A</field>
+            <field name="zip">1099-004</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT9000" model="bank">
+            <field name="party" ref="PARTY-PT9000"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT9000</field>
+        </record>
+    </data>
+</tryton>
