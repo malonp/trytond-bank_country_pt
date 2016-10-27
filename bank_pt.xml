@@ -1983,7 +1983,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT4110" model="party.address">
             <field name="party" ref="PARTY-PT4110"/>
-            <field name="street">PRAÇA DA REPÚBLICA, 31</field>
+            <field name="street">PRAÇA DA REPÚBLICA, 35</field>
             <field name="zip">6100-740</field>
             <field name="city">Sertã</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
