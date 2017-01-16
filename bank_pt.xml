@@ -300,8 +300,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0032" model="party.address">
             <field name="party" ref="PARTY-PT0032"/>
-            <field name="street">AVENIDA DO COLÉGIO MILITAR, 37 F, 13.º ANDAR, TORRE ORIENTE</field>
-            <field name="zip">1500-180</field>
+            <field name="street">RUA DUQUE DE PALMELA, N.º 37 - 5.º ANDAR</field>
+            <field name="zip">1250-097</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -561,8 +561,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0063" model="party.address">
             <field name="party" ref="PARTY-PT0063"/>
-            <field name="street">AVENIDA 24 DE JULHO, N.º 98</field>
-            <field name="zip">1200-870</field>
+            <field name="street">AVENIDA JOSÉ MALHOA, N.º 22, 2.º PISO</field>
+            <field name="zip">1099-012</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -1389,7 +1389,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3010" model="party.address">
             <field name="party" ref="PARTY-PT3010"/>
-            <field name="street">LARGO DA CAIXA AGRÍCOLA, N.º 2</field>
+            <field name="street">LARGO ANTÓNIO CACHULO DA TRINDADE, N.º 2</field>
             <field name="zip">3140-011</field>
             <field name="city">Montemor-O-Velho</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
