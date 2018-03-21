@@ -414,7 +414,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0046" model="party.party">
-            <field name="name">BANCO POPULAR PORTUGAL, SA </field>
+            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANCO POPULAR PORTUGAL, SA)</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
