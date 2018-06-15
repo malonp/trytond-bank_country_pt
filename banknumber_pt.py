@@ -22,7 +22,7 @@
 
 from stdnum.iso7064 import mod_97_10
 
-from trytond.modules.bank_country import bank, banknumber
+from trytond.modules.bank_country import banknumber, configuration
 
 
 def check_code(number):
@@ -33,4 +33,4 @@ def check_code(number):
 
 
 banknumber.check_code_pt = check_code
-bank.BANK_COUNTRIES.append('PT')
+configuration.BANK_COUNTRIES.append('PT')

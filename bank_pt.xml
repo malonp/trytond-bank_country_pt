@@ -395,8 +395,26 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0036</field>
         </record>
 
+        <record id="PARTY-PT0038" model="party.party">
+            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANIF – BANCO INTERNACIONAL DO FUNCHAL, SA)</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0038" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0038" model="bank">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="bic">BNIFPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0038</field>
+        </record>
+
         <record id="PARTY-PT0046" model="party.party">
-            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANCO POPULAR PORTUGAL, SA)</field>
+            <field name="name">BANCO POPULAR PORTUGAL, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -404,6 +422,15 @@ this repository contains the full copyright notices and license terms. -->
         <record id="CATEGORY-PT0046" model="party.party-party.category">
             <field name="party" ref="PARTY-PT0046"/>
             <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0046" model="party.address">
+            <field name="party" ref="PARTY-PT0046"/>
+            <field name="street">EDIFÍCIO SEDE - RUA RAMALHO ORTIGÃO, Nº. 51</field>
+            <field name="zip">1099-090</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
         </record>
 
         <record id="BANK-PT0046" model="bank">
@@ -2078,6 +2105,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT4110</field>
         </record>
 
+        <record id="PARTY-PT5010" model="party.party">
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALCANHOES, CRL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5010" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5010" model="party.address">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="street">RUA PAULINHO DA CUNHA E SILVA, 260</field>
+            <field name="zip">2000-369</field>
+            <field name="city">Santarém</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5010" model="bank">
+            <field name="party" ref="PARTY-PT5010"/>
+            <field name="bic">CCCMPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5010</field>
+        </record>
+
         <record id="PARTY-PT5020" model="party.party">
             <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALCOBAÇA, CARTAXO, NAZARÉ, RIO MAIOR E SANTARÉM, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -2403,7 +2457,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5230" model="party.party">
-            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE PERNES E ALCANHÕES, CRL</field>
+            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PERNES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2415,7 +2469,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT5230" model="party.address">
             <field name="party" ref="PARTY-PT5230"/>
-            <field name="street">RUA ENG. ANTÓNIO TORRES, 140</field>
+            <field name="street">RUA ENG. ANTÓNIO TORRES, 140/140-A</field>
             <field name="zip">2000-495</field>
             <field name="city">Pernes</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
