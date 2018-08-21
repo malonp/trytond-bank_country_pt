@@ -66,8 +66,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0008" model="party.address">
             <field name="party" ref="PARTY-PT0008"/>
-            <field name="street">AVENIDA ANTÓNIO AUGUSTO DE AGUIAR, N.º 130, 8º ANDAR</field>
-            <field name="zip">1050-020</field>
+            <field name="street">RUA TIERNO GALVAN, TORRE 3, 12º PISO</field>
+            <field name="zip">1070-274</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -393,6 +393,24 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">MPIOPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0036</field>
+        </record>
+
+        <record id="PARTY-PT0038" model="party.party">
+            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANIF – BANCO INTERNACIONAL DO FUNCHAL, SA)</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0038" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0038" model="bank">
+            <field name="party" ref="PARTY-PT0038"/>
+            <field name="bic">BNIFPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0038</field>
         </record>
 
         <record id="PARTY-PT0046" model="party.party">
@@ -831,8 +849,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0191" model="party.address">
             <field name="party" ref="PARTY-PT0191"/>
-            <field name="street">PRAÇA MARQUÊS DE POMBAL, Nº 16 - 3º</field>
-            <field name="zip">1269-134</field>
+            <field name="street">AVENIDA ENGENHEIRO DUARTE PACHECO, CC DAS AMOREIRAS, TORRE 1 - PISO 7</field>
+            <field name="zip">1070-101</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -858,8 +876,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0193" model="party.address">
             <field name="party" ref="PARTY-PT0193"/>
-            <field name="street">AVENIDA D. JOÃO II, Nº 11, EDIFÍCIO ADAMASTOR, TORRE A, PISO 7º</field>
-            <field name="zip">1999-002</field>
+            <field name="street">AVENIDA D. JOÃO II, Nº 13.I</field>
+            <field name="zip">1999-001</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
