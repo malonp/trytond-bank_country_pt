@@ -22,6 +22,6 @@
 from trytond.pool import Pool
 from .banknumber_pt import *
 
+
 def register():
-    Pool.register(
-        module='bank_country_pt', type_='model')
+    Pool.register(module='bank_country_pt', type_='model')
