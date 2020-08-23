@@ -261,7 +261,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0032" model="party.party">
-            <field name="name">BARCLAYS BANK, PLC</field>
+            <field name="name">BARCLAYS BANK IRELAND PLC - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -377,15 +377,6 @@ this repository contains the full copyright notices and license terms. -->
         <record id="CATEGORY-PT0036" model="party.party-party.category">
             <field name="party" ref="PARTY-PT0036"/>
             <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT0036" model="party.address">
-            <field name="party" ref="PARTY-PT0036"/>
-            <field name="street">RUA CASTILHO Nº 5</field>
-            <field name="zip">1250-066</field>
-            <field name="city">Lisboa</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
         </record>
 
         <record id="BANK-PT0036" model="bank">
@@ -687,9 +678,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0086" model="party.address">
             <field name="party" ref="PARTY-PT0086"/>
-            <field name="street">AV. PRAIA DA VITÓRIA, Nº 71 - 5º PISO - FRAÇÃO A</field>
-            <field name="zip">1050-183</field>
-            <field name="city">Lisboa</field>
+            <field name="street">RUA DR. ANTÓNIO LOUREIRO BORGES, N.º 7, 6º PISO, EDF ARQUIPARQUE 7</field>
+            <field name="zip">1495-131</field>
+            <field name="city">Algés</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -795,8 +786,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0170" model="party.address">
             <field name="party" ref="PARTY-PT0170"/>
-            <field name="street">AVENIDA 5 DE OUTUBRO, N.º 48 - 1º</field>
-            <field name="zip">1050-057</field>
+            <field name="street">RUA CASTILHO, N.º 20</field>
+            <field name="zip">1250-069</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -942,33 +933,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BKBKPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0269</field>
-        </record>
-
-        <record id="PARTY-PT0698" model="party.party">
-            <field name="name">UNICRE - INSTITUICAO FINANCEIRA DE CREDITO, SA</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT0698" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT0698"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT0698" model="party.address">
-            <field name="party" ref="PARTY-PT0698"/>
-            <field name="street">AVENIDA  ANTONIO AUGUSTO DE AGUIAR, 122 - 9º ANDAR</field>
-            <field name="zip">1050-019</field>
-            <field name="city">Lisboa</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT0698" model="bank">
-            <field name="party" ref="PARTY-PT0698"/>
-            <field name="bic">UIFCPTP1XXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT0698</field>
         </record>
 
         <record id="PARTY-PT0781" model="party.party">
@@ -1947,8 +1911,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3450" model="party.address">
             <field name="party" ref="PARTY-PT3450"/>
-            <field name="street">AVENIDA DAS FORÇAS ARMADAS, S/ N.º</field>
-            <field name="zip">3300-011</field>
+            <field name="street">AVENIDA JOSÉ AUGUSTO DE CARVALHO</field>
+            <field name="zip">3300-014</field>
             <field name="city">Arganil</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
