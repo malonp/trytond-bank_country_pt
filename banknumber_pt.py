@@ -21,7 +21,6 @@
 
 
 from stdnum.iso7064 import mod_97_10
-
 from trytond.modules.bank_country import banknumber, configuration
 
 
