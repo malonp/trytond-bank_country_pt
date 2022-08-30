@@ -5,7 +5,7 @@ this repository contains the full copyright notices and license terms. -->
     <data>
 
         <!--
-        Output of scripts/bank_pt.py
+        Output of scripts/bank_xx.py
         -->
 
         <record id="PARTY-PT0001" model="party.party">
@@ -39,8 +39,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0007" model="party.address">
             <field name="party" ref="PARTY-PT0007"/>
-            <field name="street">AVENIDA DA LIBERDADE, N.º 195</field>
-            <field name="zip">1250-142</field>
+            <field name="street">R PRIOR DO CRATO, 135</field>
+            <field name="zip">1350-260</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -93,8 +93,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0010" model="party.address">
             <field name="party" ref="PARTY-PT0010"/>
-            <field name="street">RUA TENENTE VALADIM, 284</field>
-            <field name="zip">4100-476</field>
+            <field name="street">AVENIDA DA BOAVISTA, N.º 1117</field>
+            <field name="zip">4100-129</field>
             <field name="city">Porto</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -145,6 +145,15 @@ this repository contains the full copyright notices and license terms. -->
             <field name="category" ref="bank_country.banks"/>
         </record>
 
+        <record id="ADDRESS-PT0018" model="party.address">
+            <field name="party" ref="PARTY-PT0018"/>
+            <field name="street">RUA DÁ DA BANDEIRA, 805</field>
+            <field name="zip">4000-438</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
         <record id="BANK-PT0018" model="bank">
             <field name="party" ref="PARTY-PT0018"/>
             <field name="bic">TOTAPTPLXXX</field>
@@ -153,7 +162,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0019" model="party.party">
-            <field name="name">BANCO BILBAO VIZCAYA  ARGENTARIA, S.A. - SUCURSAL EM PORTUGAL</field>
+            <field name="name">BANCO BILBAO VIZCAYA ARGENTARIA, S.A. - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -165,7 +174,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0019" model="party.address">
             <field name="party" ref="PARTY-PT0019"/>
-            <field name="street">AVENIDA DA LIBERDADE, N.º 222</field>
+            <field name="street">RUA BARATA SALGUEIRO, 6A</field>
             <field name="zip">1250-148</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
@@ -282,13 +291,13 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="BANK-PT0032" model="bank">
             <field name="party" ref="PARTY-PT0032"/>
-            <field name="bic">BKBKPTPLXXX</field>
+            <field name="bic">BARCPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0032</field>
         </record>
 
         <record id="PARTY-PT0033" model="party.party">
-            <field name="name">BANCO COMERCIAL PORTUGUES, SA</field>
+            <field name="name">BANCO COMERCIAL PORTUGUÊS, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -300,9 +309,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0033" model="party.address">
             <field name="party" ref="PARTY-PT0033"/>
-            <field name="street">PRAÇA DOM JOÃO I, Nº. 12</field>
-            <field name="zip">4000-295</field>
-            <field name="city">Porto</field>
+            <field name="street">RUA PROFESSOR REINALDO DOS SANTOS, 7A</field>
+            <field name="zip">1500-501</field>
+            <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -327,7 +336,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0034" model="party.address">
             <field name="party" ref="PARTY-PT0034"/>
-            <field name="street">TORRE OCIDENTE, RUA GALILEU GALILEI, N.º 2, 13º PISO</field>
+            <field name="street">TORRE OCIDENTE, R. GALILEU GALILEI, N.º 2 G MEZZANINE</field>
             <field name="zip">1500-392</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
@@ -342,7 +351,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0035" model="party.party">
-            <field name="name">CAIXA GERAL DE DEPOSITOS, SA</field>
+            <field name="name">CAIXA GERAL DE DEPÓSITOS, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -379,47 +388,20 @@ this repository contains the full copyright notices and license terms. -->
             <field name="category" ref="bank_country.banks"/>
         </record>
 
+        <record id="ADDRESS-PT0036" model="party.address">
+            <field name="party" ref="PARTY-PT0036"/>
+            <field name="street">RUA ÁUREA, 219 a 241</field>
+            <field name="zip">1100-062</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
         <record id="BANK-PT0036" model="bank">
             <field name="party" ref="PARTY-PT0036"/>
             <field name="bic">MPIOPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0036</field>
-        </record>
-
-        <record id="PARTY-PT0038" model="party.party">
-            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANIF – BANCO INTERNACIONAL DO FUNCHAL, SA)</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT0038" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT0038"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="BANK-PT0038" model="bank">
-            <field name="party" ref="PARTY-PT0038"/>
-            <field name="bic">BNIFPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT0038</field>
-        </record>
-
-        <record id="PARTY-PT0046" model="party.party">
-            <field name="name">BANCO SANTANDER TOTTA, SA (ex-BANCO POPULAR PORTUGAL, SA)</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT0046" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT0046"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="BANK-PT0046" model="bank">
-            <field name="party" ref="PARTY-PT0046"/>
-            <field name="bic">CRBNPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT0046</field>
         </record>
 
         <record id="PARTY-PT0047" model="party.party">
@@ -476,8 +458,35 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0048</field>
         </record>
 
+        <record id="PARTY-PT0057" model="party.party">
+            <field name="name">CAIXA ECONÓMICA DO PORTO</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0057" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0057"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0057" model="party.address">
+            <field name="party" ref="PARTY-PT0057"/>
+            <field name="street">RUA FORMOSA, 325 - 1.</field>
+            <field name="zip">4000-252</field>
+            <field name="city">Porto</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0057" model="bank">
+            <field name="party" ref="PARTY-PT0057"/>
+            <field name="bic">CAEPPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0057</field>
+        </record>
+
         <record id="PARTY-PT0059" model="party.party">
-            <field name="name">CAIXA ECONOMICA DA MISERICORDIA DE ANGRA DO HEROISMO, CAIXA ECONÓMICA BANCÁRIA, S.A.</field>
+            <field name="name">CAIXA ECONÓMICA DA MISERICÓRDIA DE ANGRA DO HEROÍSMO, CAIXA ECONÓMICA BANCÁRIA, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -501,6 +510,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">CEMAPTP2XXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0059</field>
+        </record>
+
+        <record id="PARTY-PT0060" model="party.party">
+            <field name="name">BANCO MADESANT - SOCIEDADE UNIPESSOAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0060" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0060"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0060" model="party.address">
+            <field name="party" ref="PARTY-PT0060"/>
+            <field name="street">AVENIDA ARRIAGA, 73-2º SALA 211</field>
+            <field name="zip">9000-060</field>
+            <field name="city">Funchal</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0060" model="bank">
+            <field name="party" ref="PARTY-PT0060"/>
+            <field name="bic">MASNPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0060</field>
         </record>
 
         <record id="PARTY-PT0061" model="party.party">
@@ -558,7 +594,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0064" model="party.party">
-            <field name="name">BANCO PORTUGUES DE GESTAO, SA</field>
+            <field name="name">BANCO PORTUGUÊS DE GESTÃO, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -570,8 +606,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0064" model="party.address">
             <field name="party" ref="PARTY-PT0064"/>
-            <field name="street">RUA DO SALITRE, Nº 165/167</field>
-            <field name="zip">1250-198</field>
+            <field name="street">RUA BARATA SALGUEIRO Nº 37 - 4º</field>
+            <field name="zip">1250-042</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -585,7 +621,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0065" model="party.party">
-            <field name="name">BEST - BANCO ELECTRONICO DE SERVICO TOTAL, SA</field>
+            <field name="name">BEST - BANCO ELECTRÓNICO DE SERVIÇO TOTAL, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -612,7 +648,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0073" model="party.party">
-            <field name="name">BANCO SANTANDER CONSUMER PORTUGAL, SA</field>
+            <field name="name">SANTANDER CONSUMER FINANCE, S.A. - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -624,8 +660,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0073" model="party.address">
             <field name="party" ref="PARTY-PT0073"/>
-            <field name="street">RUA CASTILHO, 2 E 4</field>
-            <field name="zip">1269-073</field>
+            <field name="street">RUA DE CANTÁBRIA, 42, EDIFÍCIO 2</field>
+            <field name="zip">2775-711</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -639,7 +675,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0079" model="party.party">
-            <field name="name">BANCO BIC PORTUGUES, SA</field>
+            <field name="name">BANCO BIC PORTUGUÊS, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -680,7 +716,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT0086"/>
             <field name="street">RUA DR. ANTÓNIO LOUREIRO BORGES, N.º 7, 6º PISO, EDF ARQUIPARQUE 7</field>
             <field name="zip">1495-131</field>
-            <field name="city">Algés</field>
+            <field name="city">Oeiras</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -693,7 +729,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0097" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA CHAMUSCA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA CHAMUSCA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -720,7 +756,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0098" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BOMBARRAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE BOMBARRAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -747,7 +783,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0160" model="party.party">
-            <field name="name">NOVO BANCO DOS ACORES, SA</field>
+            <field name="name">NOVO BANCO DOS AÇORES, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -774,7 +810,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0170" model="party.party">
-            <field name="name">ABANCA CORPORACION BANCARIA, SA, SUCURSAL EM PORTUGAL</field>
+            <field name="name">ABANCA CORPORACION BANCARIA, SA - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -801,7 +837,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0189" model="party.party">
-            <field name="name">BANCO ATLANTICO EUROPA, SA</field>
+            <field name="name">BANCO ATLÂNTICO EUROPA, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -828,7 +864,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT0191" model="party.party">
-            <field name="name">BNI - BANCO DE NEGOCIOS INTERNACIONAL (EUROPA), SA</field>
+            <field name="name">BNI - BANCO DE NEGÓCIOS INTERNACIONAL (EUROPA), SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -867,9 +903,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0193" model="party.address">
             <field name="party" ref="PARTY-PT0193"/>
-            <field name="street">AVENIDA D. JOÃO II, Nº 13, EDIFÍCIO BÁLTICO, PISO 11º</field>
-            <field name="zip">1999-001</field>
-            <field name="city">Lisboa</field>
+            <field name="street">AVENIDA CONDE DA CARREIRA, SN</field>
+            <field name="zip">4900-999</field>
+            <field name="city">Viana Do Castelo</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -879,6 +915,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">CTTVPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0193</field>
+        </record>
+
+        <record id="PARTY-PT0195" model="party.party">
+            <field name="name">ITAÚ BBA EUROPE, S.A.</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0195" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0195"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0195" model="party.address">
+            <field name="party" ref="PARTY-PT0195"/>
+            <field name="street">RUA TIERNO GALVAN, TORRE 3, 11º PISO</field>
+            <field name="zip">1099-048</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0195" model="bank">
+            <field name="party" ref="PARTY-PT0195"/>
+            <field name="bic">ITAUPTPPXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0195</field>
         </record>
 
         <record id="PARTY-PT0235" model="party.party">
@@ -894,7 +957,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0235" model="party.address">
             <field name="party" ref="PARTY-PT0235"/>
-            <field name="street">AVENIDA  DA BOAVISTA, 1083</field>
+            <field name="street">AVENIDA DA BOAVISTA, 1083</field>
             <field name="zip">4100-129</field>
             <field name="city">Porto</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
@@ -906,6 +969,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BLJCPTPTXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0235</field>
+        </record>
+
+        <record id="PARTY-PT0246" model="party.party">
+            <field name="name">BANCO PRIMUS, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0246" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0246"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0246" model="party.address">
+            <field name="party" ref="PARTY-PT0246"/>
+            <field name="street">RUA DA QUINTA DO QUINTÃ, 4, EDIFÍCIO D. JOÃO I, 1º A</field>
+            <field name="zip">2770-192</field>
+            <field name="city">Oeiras</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0246" model="bank">
+            <field name="party" ref="PARTY-PT0246"/>
+            <field name="bic">PRUUPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0246</field>
         </record>
 
         <record id="PARTY-PT0269" model="party.party">
@@ -921,8 +1011,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT0269" model="party.address">
             <field name="party" ref="PARTY-PT0269"/>
-            <field name="street">PRAÇA MARQUÊS DE POMBAL, N.º 13, 2.º ANDAR</field>
-            <field name="zip">1250-162</field>
+            <field name="street">AVENIDA DA REPÚBLICA, 2-B</field>
+            <field name="zip">1050-191</field>
             <field name="city">Lisboa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -933,6 +1023,87 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BKBKPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0269</field>
+        </record>
+
+        <record id="PARTY-PT0275" model="party.party">
+            <field name="name">BANCO SABADELL, SA - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0275" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0275"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0275" model="party.address">
+            <field name="party" ref="PARTY-PT0275"/>
+            <field name="street">AVENIDA DA LIBERDADE, N.º 225, 5.º ANDAR</field>
+            <field name="zip">1250-097</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0275" model="bank">
+            <field name="party" ref="PARTY-PT0275"/>
+            <field name="bic">BSABPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0275</field>
+        </record>
+
+        <record id="PARTY-PT0305" model="party.party">
+            <field name="name">321 CRÉDITO - INSTITUIÇÃO FINANCEIRA DE CRÉDITO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0305" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0305"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0305" model="party.address">
+            <field name="party" ref="PARTY-PT0305"/>
+            <field name="street">AVENIDA D. JOÃO II, N.º 13 – EDIFÍCIO BÁLTICO, PISO 11</field>
+            <field name="zip">1999-001</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0305" model="bank">
+            <field name="party" ref="PARTY-PT0305"/>
+            <field name="bic">CIEDPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0305</field>
+        </record>
+
+        <record id="PARTY-PT0698" model="party.party">
+            <field name="name">UNICRE - INSTITUIÇÃO FINANCEIRA DE CRÉDITO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0698" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0698" model="party.address">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="street">RUA GENERAL FIRMINO MIGUEL, Nº 6-B, PISO - 1</field>
+            <field name="zip">1600-300</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0698" model="bank">
+            <field name="party" ref="PARTY-PT0698"/>
+            <field name="bic">UIFCPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0698</field>
         </record>
 
         <record id="PARTY-PT0781" model="party.party">
@@ -953,8 +1124,107 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0781</field>
         </record>
 
+        <record id="PARTY-PT0800" model="party.party">
+            <field name="name">BBVA, INSTITUIÇÃO FINANCEIRA DE CRÉDITO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0800" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0800"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0800" model="party.address">
+            <field name="party" ref="PARTY-PT0800"/>
+            <field name="street">EDIFÍCIO INFANTE, AV. D. JOÃO II, LOTE 35 F/G/H, 2º ANDAR</field>
+            <field name="zip">1990-083</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0800" model="bank">
+            <field name="party" ref="PARTY-PT0800"/>
+            <field name="bic">BIFDPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0800</field>
+        </record>
+
+        <record id="PARTY-PT0916" model="party.party">
+            <field name="name">BANCO CREDIBOM, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0916" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0916"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0916" model="party.address">
+            <field name="party" ref="PARTY-PT0916"/>
+            <field name="street">CENTRO EMPRESARIAL LAGOAS PARK, EDIFÍCIO 14 - PISO 2</field>
+            <field name="zip">2740-262</field>
+            <field name="city">Oeiras</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0916" model="bank">
+            <field name="party" ref="PARTY-PT0916"/>
+            <field name="bic">CRBBPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0916</field>
+        </record>
+
+        <record id="PARTY-PT0921" model="party.party">
+            <field name="name">COFIDIS</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0921" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0921"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0921" model="party.address">
+            <field name="party" ref="PARTY-PT0921"/>
+            <field name="street">EDIFÍCIO NATURA TOWERS – RUA FREDERICO GEORGE, N.º 37</field>
+            <field name="zip">1649-070</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0921" model="bank">
+            <field name="party" ref="PARTY-PT0921"/>
+            <field name="bic">CFFIPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0921</field>
+        </record>
+
+        <record id="PARTY-PT0955" model="party.party">
+            <field name="name">OREY FINANCIAL - INSTITUIÇÃO FINANCEIRA DE CRÉDITO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0955" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0955"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT0955" model="bank">
+            <field name="party" ref="PARTY-PT0955"/>
+            <field name="bic">OVSCPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0955</field>
+        </record>
+
         <record id="PARTY-PT1020" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE AROUCA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE AROUCA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -981,7 +1251,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1280" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO MEDIO AVE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO MÉDIO AVE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -993,9 +1263,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT1280" model="party.address">
             <field name="party" ref="PARTY-PT1280"/>
-            <field name="street">RUA JOSÉ LUÍS ANDRADE, 65</field>
-            <field name="zip">4780-487</field>
-            <field name="city">Santo Tirso</field>
+            <field name="street">RUA D. FERNANDO II, N.º 173</field>
+            <field name="zip">4760-138</field>
+            <field name="city">Vila Nova De Famalicão</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1008,7 +1278,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1290" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VILA VERDE E DE TERRAS DO BOURO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE VILA VERDE E DE TERRAS DO BOURO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1035,7 +1305,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1320" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DO SOUSA, AVE, BASTO E TAMEGA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TERRAS DO SOUSA, AVE, BASTO E TÂMEGA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1047,9 +1317,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT1320" model="party.address">
             <field name="party" ref="PARTY-PT1320"/>
-            <field name="street">PRAÇA DA REPÚBLICA N.º 228</field>
-            <field name="zip">4610-116</field>
-            <field name="city">Felgueiras</field>
+            <field name="street">RUA MONSENHOR VIEIRA DE CASTRO, S/N</field>
+            <field name="zip">4820-279</field>
+            <field name="city">Fafe</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1062,7 +1332,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1340" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO SOUSA E BAIXO TAMEGA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO VALE DO SOUSA E BAIXO TÂMEGA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1074,9 +1344,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT1340" model="party.address">
             <field name="party" ref="PARTY-PT1340"/>
-            <field name="street">LARGO DA DEVESA</field>
-            <field name="zip">4560-496</field>
-            <field name="city">Penafiel</field>
+            <field name="street">RUA GENERAL HUMBERTO DELGADO 31</field>
+            <field name="zip">4690-015</field>
+            <field name="city">Cinfães</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1089,7 +1359,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1400" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PAREDES, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE PAREDES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1116,7 +1386,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1420" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NOROESTE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO NOROESTE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1143,7 +1413,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1440" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA AREA METROPOLITANA DO PORTO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA ÁREA METROPOLITANA DO PORTO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1155,9 +1425,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT1440" model="party.address">
             <field name="party" ref="PARTY-PT1440"/>
-            <field name="street">AVENIDA VISCONDE DE BARREIROS, Nº 85</field>
-            <field name="zip">4470-151</field>
-            <field name="city">Maia</field>
+            <field name="street">TRAVESSA 25 DE ABRIL, 41</field>
+            <field name="zip">4440-709</field>
+            <field name="city">Valongo</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1170,7 +1440,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1460" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE POVOA DE VARZIM,VILA DO CONDE E ESPOSENDE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE PÓVOA DE VARZIM,VILA DO CONDE E ESPOSENDE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1184,7 +1454,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT1460"/>
             <field name="street">LARGO DAS DORES, 1</field>
             <field name="zip">4490-421</field>
-            <field name="city">Póvoa De Varzim</field>
+            <field name="city">Povoa De Varzim</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1197,7 +1467,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT1470" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO CAVADO E BASTO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO ALTO CÁVADO E BASTO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1211,7 +1481,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT1470"/>
             <field name="street">PRAÇA DO COMÉRCIO, N.º 61 E 63, FERREIROS</field>
             <field name="zip">4720-337</field>
-            <field name="city">Ferreiros</field>
+            <field name="city">Amares</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1224,7 +1494,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2040" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO DOURO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO ALTO DOURO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1236,9 +1506,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT2040" model="party.address">
             <field name="party" ref="PARTY-PT2040"/>
-            <field name="street">AVENIDA JOÃO DA CRUZ, 94/98</field>
-            <field name="zip">5300-178</field>
-            <field name="city">Bragança</field>
+            <field name="street">AVENIDA DR. FRANCISCO SÁ CARNEIRO, 26</field>
+            <field name="zip">5070-013</field>
+            <field name="city">Alijo</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1251,7 +1521,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2090" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO BEIRA DOURO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO BEIRA DOURO E LAFÕES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1278,7 +1548,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2140" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO DOURO E COA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO DOURO E CÔA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1292,7 +1562,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT2140"/>
             <field name="street">AVENIDA BARÃO DE FORRESTER, N.º 45</field>
             <field name="zip">5130-570</field>
-            <field name="city">S. João Da Pesqueira</field>
+            <field name="city">São João Da Pesqueira</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1305,7 +1575,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2160" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO TAVORA E DOURO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO VALE DO TÁVORA E DOURO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1317,9 +1587,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT2160" model="party.address">
             <field name="party" ref="PARTY-PT2160"/>
-            <field name="street">RUA SÁ DE ALBERGARIA</field>
-            <field name="zip">5120-423</field>
-            <field name="city">Tabuaço</field>
+            <field name="street">PRAÇA DA REPÚBLICA, 26</field>
+            <field name="zip">5110-127</field>
+            <field name="city">Armamar</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1332,7 +1602,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2190" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA TERRA QUENTE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA TERRA QUENTE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1359,7 +1629,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT2230" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TRAS-OS-MONTES E ALTO DOURO, C.R.L</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TRÁS-OS-MONTES E ALTO DOURO, C.R.L.</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1371,9 +1641,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT2230" model="party.address">
             <field name="party" ref="PARTY-PT2230"/>
-            <field name="street">RUA DOS CAMILOS, 249</field>
-            <field name="zip">5050-273</field>
-            <field name="city">Peso Da Régua</field>
+            <field name="street">AVENIDA CONSELHEIRO JOSÉ MARIA ALPOIM, 525</field>
+            <field name="zip">5040-310</field>
+            <field name="city">Mesão Frio</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1385,35 +1655,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT2230</field>
         </record>
 
-        <record id="PARTY-PT2240" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MOGADOURO E VIMIOSO, CRL</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT2240" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT2240"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT2240" model="party.address">
-            <field name="party" ref="PARTY-PT2240"/>
-            <field name="street">AVENIDA DO SABOR, 59/61</field>
-            <field name="zip">5200-204</field>
-            <field name="city">Mogadouro</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT2240" model="bank">
-            <field name="party" ref="PARTY-PT2240"/>
-            <field name="bic">CCCMPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT2240</field>
-        </record>
-
         <record id="PARTY-PT2260" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DE MIRANDA DO DOURO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DOURO E SABOR, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1425,9 +1668,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT2260" model="party.address">
             <field name="party" ref="PARTY-PT2260"/>
-            <field name="street">RUA DA INDÚSTRIA</field>
-            <field name="zip">5225-032</field>
-            <field name="city">Palaçoulo</field>
+            <field name="street">AVENIDA DO SABOR, 59/61</field>
+            <field name="zip">5200-204</field>
+            <field name="city">Mogadouro</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1440,7 +1683,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3010" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO MONDEGO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO BAIXO MONDEGO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1467,7 +1710,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3020" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CANTANHEDE E MIRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE CANTANHEDE E MIRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1494,7 +1737,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3030" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE COIMBRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE COIMBRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1521,7 +1764,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3060" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO DAO  E ALTO VOUGA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO VALE DO DÃO E ALTO VOUGA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1548,7 +1791,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3090" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DE AZEMEIS E ESTARREJA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE OLIVEIRA DE AZEMÉIS E ESTARREJA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1560,9 +1803,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3090" model="party.address">
             <field name="party" ref="PARTY-PT3090"/>
-            <field name="street">RUA LUÍS DE CAMÕES, 76</field>
-            <field name="zip">3720-230</field>
-            <field name="city">Oliveira De Azeméis</field>
+            <field name="street">AVENIDA 25 DE ABRIL, 55-B</field>
+            <field name="zip">3860-352</field>
+            <field name="city">Estarreja</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1575,7 +1818,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3110" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE POMBAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE POMBAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1587,7 +1830,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3110" model="party.address">
             <field name="party" ref="PARTY-PT3110"/>
-            <field name="street">PRAÇA DA REPÚBLICA</field>
+            <field name="street">EDIFÍCIO DR. ORLANDO CORDEIRO, PRAÇA DA REPÚBLICA</field>
             <field name="zip">3100-568</field>
             <field name="city">Pombal</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
@@ -1602,7 +1845,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3160" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VALE DE CAMBRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE VALE DE CAMBRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1628,35 +1871,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT3160</field>
         </record>
 
-        <record id="PARTY-PT3190" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LAFOES, CRL</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT3190" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT3190"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT3190" model="party.address">
-            <field name="party" ref="PARTY-PT3190"/>
-            <field name="street">RUA SERPA PINTO, EDIFÍCIO JARDIM</field>
-            <field name="zip">3660-512</field>
-            <field name="city">S. Pedro Do Sul</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT3190" model="bank">
-            <field name="party" ref="PARTY-PT3190"/>
-            <field name="bic">CCCMPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT3190</field>
-        </record>
-
         <record id="PARTY-PT3210" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO BAIRRO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE OLIVEIRA DO BAIRRO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1683,7 +1899,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3220" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA VERDE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA COSTA VERDE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1695,8 +1911,8 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3220" model="party.address">
             <field name="party" ref="PARTY-PT3220"/>
-            <field name="street">RUA ANTÓNIO CORREIA DE CARVALHO, Nº. 188</field>
-            <field name="zip">4400-023</field>
+            <field name="street">AVENIDA DA REPÚBLICA, 1342 - A</field>
+            <field name="zip">4430-192</field>
             <field name="city">Vila Nova De Gaia</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
@@ -1710,7 +1926,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3240" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO VOUGA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO BAIXO VOUGA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1722,9 +1938,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3240" model="party.address">
             <field name="party" ref="PARTY-PT3240"/>
-            <field name="street">PRACETA ENG.º MANUEL SIMÕES PONTES</field>
-            <field name="zip">3810-195</field>
-            <field name="city">Aveiro</field>
+            <field name="street">AVENIDA 25 DE ABRIL, S/Nº</field>
+            <field name="zip">3750-101</field>
+            <field name="city">Águeda</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1736,35 +1952,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT3240</field>
         </record>
 
-        <record id="PARTY-PT3270" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ANADIA, CRL</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT3270" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT3270"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT3270" model="party.address">
-            <field name="party" ref="PARTY-PT3270"/>
-            <field name="street">AVENIDA DO CABECINHO, S/N</field>
-            <field name="zip">3780-203</field>
-            <field name="city">Anadia</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT3270" model="bank">
-            <field name="party" ref="PARTY-PT3270"/>
-            <field name="bic">CCCMPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT3270</field>
-        </record>
-
         <record id="PARTY-PT3310" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALBERGARIA E SEVER, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALBERGARIA E SEVER, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1776,9 +1965,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3310" model="party.address">
             <field name="party" ref="PARTY-PT3310"/>
-            <field name="street">RUA ALMIRANTE REIS, 10</field>
-            <field name="zip">3850-121</field>
-            <field name="city">Albergaria-A-Velha</field>
+            <field name="street">AVENIDA COMENDADOR AUGUSTO MARTINS PEREIRA, 68</field>
+            <field name="zip">3740-255</field>
+            <field name="city">Sever Do Vouga</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1791,7 +1980,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3340" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE VAGOS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE VAGOS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1803,7 +1992,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3340" model="party.address">
             <field name="party" ref="PARTY-PT3340"/>
-            <field name="street">RUA  PADRE VICENTE MARIA DA ROCHA</field>
+            <field name="street">RUA PADRE VICENTE MARIA DA ROCHA</field>
             <field name="zip">3840-453</field>
             <field name="city">Vagos</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
@@ -1818,7 +2007,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3370" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DAS SERRAS DE ANSIAO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DAS SERRAS DE ANSIÃO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1845,7 +2034,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3380" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO HOSPITAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE OLIVEIRA DO HOSPITAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1872,7 +2061,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3400" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BAIRRADA E AGUIEIRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA BAIRRADA E AGUIEIRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1884,9 +2073,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT3400" model="party.address">
             <field name="party" ref="PARTY-PT3400"/>
-            <field name="street">RUA BRANQUINHO CARVALHO</field>
-            <field name="zip">3050-335</field>
-            <field name="city">Mealhada</field>
+            <field name="street">RUA DR. JOSÉ LOPES DE OLIVEIRA, S/Nº</field>
+            <field name="zip">3450-154</field>
+            <field name="city">Mortágua</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -1899,7 +2088,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3450" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO BEIRA CENTRO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO BEIRA CENTRO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1926,7 +2115,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT3470" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DE VIRIATO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TERRAS DE VIRIATO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1953,7 +2142,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT4020" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA REGIAO DO FUNDAO E SABUGAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA REGIÃO DO FUNDÃO E SABUGAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -1980,7 +2169,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT4050" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BEIRA BAIXA (SUL), CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA BEIRA BAIXA (SUL), CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2007,7 +2196,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT4080" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA SERRA DA ESTRELA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA SERRA DA ESTRELA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2019,9 +2208,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT4080" model="party.address">
             <field name="party" ref="PARTY-PT4080"/>
-            <field name="street">LARGO MARQUES DA SILVA</field>
-            <field name="zip">6270-490</field>
-            <field name="city">Seia</field>
+            <field name="street">RUA MARQUÊS DE POMBAL, N.ºS 49 A 53</field>
+            <field name="zip">6300-728</field>
+            <field name="city">Guarda</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2034,7 +2223,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT4110" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA ZONA DO PINHAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA ZONA DO PINHAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2046,9 +2235,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT4110" model="party.address">
             <field name="party" ref="PARTY-PT4110"/>
-            <field name="street">PRAÇA DA REPÚBLICA, 35</field>
-            <field name="zip">6100-740</field>
-            <field name="city">Sertã</field>
+            <field name="street">RUA MAJOR NEUTROL DE ABREU, S/Nº</field>
+            <field name="zip">3260-427</field>
+            <field name="city">Figueiró Dos Vinhos</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2088,7 +2277,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5050" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALENQUER, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALENQUER, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2115,7 +2304,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5060" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ARRUDA DOS VINHOS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ARRUDA DOS VINHOS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2142,7 +2331,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5070" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE AZAMBUJA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE AZAMBUJA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2169,7 +2358,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5080" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA BATALHA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA BATALHA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2196,7 +2385,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5120" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CADAVAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE CADAVAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2223,7 +2412,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5130" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CALDAS DA RAINHA, OBIDOS E PENICHE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE CALDAS DA RAINHA, ÓBIDOS E PENICHE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2250,7 +2439,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5140" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LOURES, SINTRA E LITORAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE LOURES, SINTRA E LITORAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2277,7 +2466,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5170" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE CORUCHE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE CORUCHE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2304,7 +2493,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5180" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LEIRIA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE LEIRIA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2331,7 +2520,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5190" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE LOURINHA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE LOURINHÃ, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2345,7 +2534,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT5190"/>
             <field name="street">LARGO DA REPÚBLICA, 14</field>
             <field name="zip">2530-120</field>
-            <field name="city">Lourinhã</field>
+            <field name="city">Lourinha</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2358,7 +2547,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5200" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MAFRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE MAFRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2397,9 +2586,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT5230" model="party.address">
             <field name="party" ref="PARTY-PT5230"/>
-            <field name="street">RUA ENG. ANTÓNIO TORRES, 140</field>
-            <field name="zip">2000-495</field>
-            <field name="city">Pernes</field>
+            <field name="street">RUA PAULINO CUNHA E SILVA, 260</field>
+            <field name="zip">2000-369</field>
+            <field name="city">Santarém</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2412,7 +2601,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5240" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE PORTO DE MOS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE PORTO DE MÓS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2426,7 +2615,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT5240"/>
             <field name="street">AVENIDA DE SANTO ANTÓNIO, 20-C</field>
             <field name="zip">2480-860</field>
-            <field name="city">Porto De Mós</field>
+            <field name="city">Porto De Mos</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2439,7 +2628,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5270" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SALVATERRA DE MAGOS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE SALVATERRA DE MAGOS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2451,9 +2640,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT5270" model="party.address">
             <field name="party" ref="PARTY-PT5270"/>
-            <field name="street">AVENIDA DR. ROBERTO FERREIRA FONSECA, N.º 60 A</field>
-            <field name="zip">2120-117</field>
-            <field name="city">Salvaterra De Magos</field>
+            <field name="street">LARGO DUARTE LOPES, N.º 6 - B</field>
+            <field name="zip">2130-036</field>
+            <field name="city">Benavente</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2466,7 +2655,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5310" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SOBRAL DE MONTE AGRACO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE SOBRAL DE MONTE AGRAÇO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2493,7 +2682,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5340" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE TORRES VEDRAS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE TORRES VEDRAS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2547,7 +2736,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5430" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO NORTE E TRAMAGAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO RIBATEJO NORTE E TRAMAGAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2559,9 +2748,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT5430" model="party.address">
             <field name="party" ref="PARTY-PT5430"/>
-            <field name="street">PRAÇA 5 DE OUTUBRO, 37</field>
-            <field name="zip">2350-418</field>
-            <field name="city">Torres Novas</field>
+            <field name="street">ESTRADA NACIONAL 118, 626</field>
+            <field name="zip">2205-645</field>
+            <field name="city">Abrantes</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2574,7 +2763,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5460" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ENTRE TEJO E SADO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ENTRE TEJO E SADO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2586,9 +2775,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT5460" model="party.address">
             <field name="party" ref="PARTY-PT5460"/>
-            <field name="street">AV.ª D. JOÃO IV, Nº 2</field>
-            <field name="zip">2870-155</field>
-            <field name="city">Montijo</field>
+            <field name="street">AVENIDA 5 DE OUTUBRO, 10/12</field>
+            <field name="zip">2890-011</field>
+            <field name="city">Alcochete</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2601,7 +2790,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT5470" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO SUL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO RIBATEJO SUL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2615,7 +2804,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT5470"/>
             <field name="street">RUA DIREITA, 99</field>
             <field name="zip">2090-329</field>
-            <field name="city">Benfica Do Ribatejo</field>
+            <field name="city">Almeirim</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2628,7 +2817,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6020" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALCACER DO SAL E MONTEMOR-O-NOVO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALCÁCER DO SAL E MONTEMOR-O-NOVO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2655,7 +2844,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6040" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALJUSTREL E ALMODOVAR, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALJUSTREL E ALMODÔVAR, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2682,7 +2871,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6100" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BEJA E MERTOLA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO ALENTEJO SUL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2709,7 +2898,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6110" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE BORBA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE BORBA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2736,7 +2925,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6150" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NORDESTE ALENTEJANO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO NORDESTE ALENTEJANO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2748,9 +2937,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6150" model="party.address">
             <field name="party" ref="PARTY-PT6150"/>
-            <field name="street">RUA DOM NUNO ÁLVARES PEREIRA, N.º 35</field>
-            <field name="zip">7300-200</field>
-            <field name="city">Portalegre</field>
+            <field name="street">AVENIDA 25 DE ABRIL, N.º 17,</field>
+            <field name="zip">7440-015</field>
+            <field name="city">Alter Do Chão</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2763,7 +2952,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6160" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ELVAS E CAMPO MAIOR, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ELVAS E CAMPO MAIOR, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2775,9 +2964,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6160" model="party.address">
             <field name="party" ref="PARTY-PT6160"/>
-            <field name="street">RUA DE OLIVENÇA, 7</field>
-            <field name="zip">7350-075</field>
-            <field name="city">Elvas</field>
+            <field name="street">AVENIDA DA LIBERDADE NºS 4, E 4-A</field>
+            <field name="zip">7370-077</field>
+            <field name="city">Campo Maior</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2790,7 +2979,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6170" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ESTREMOZ, MONFORTE E ARRONCHES, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ESTREMOZ, MONFORTE E ARRONCHES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2802,9 +2991,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6170" model="party.address">
             <field name="party" ref="PARTY-PT6170"/>
-            <field name="street">LARGO DA REPÚBLICA, 1/2</field>
-            <field name="zip">7100-505</field>
-            <field name="city">Estremoz</field>
+            <field name="street">RUA DR. EDMUNDO CURVELO</field>
+            <field name="zip">7340-029</field>
+            <field name="city">Arronches</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2816,35 +3005,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT6170</field>
         </record>
 
-        <record id="PARTY-PT6190" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE FERREIRA DO ALENTEJO, CRL</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT6190" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT6190"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT6190" model="party.address">
-            <field name="party" ref="PARTY-PT6190"/>
-            <field name="street">AVENIDA GENERAL HUMBERTO DELGADO, 40</field>
-            <field name="zip">7900-554</field>
-            <field name="city">Ferreira Do Alentejo</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT6190" model="bank">
-            <field name="party" ref="PARTY-PT6190"/>
-            <field name="bic">CCCMPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT6190</field>
-        </record>
-
         <record id="PARTY-PT6240" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE MORAVIS, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE MORAVIS, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2856,9 +3018,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6240" model="party.address">
             <field name="party" ref="PARTY-PT6240"/>
-            <field name="street">PRAÇA  CONSELHEIRO FERNANDO SOUSA</field>
-            <field name="zip">7490-221</field>
-            <field name="city">Mora</field>
+            <field name="street">RUA 1º DE MAIO, 84</field>
+            <field name="zip">7480-153</field>
+            <field name="city">Avis</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2871,7 +3033,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6250" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO GUADIANA INTERIOR, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO GUADIANA INTERIOR, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2883,9 +3045,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6250" model="party.address">
             <field name="party" ref="PARTY-PT6250"/>
-            <field name="street">RUA DAS TERÇARIAS, S/N</field>
-            <field name="zip">7860-035</field>
-            <field name="city">Moura</field>
+            <field name="street">RUA MIGUEL BOMBARDA, 25</field>
+            <field name="zip">7090-281</field>
+            <field name="city">Viana Do Alentejo</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2898,7 +3060,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6320" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA AZUL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DA COSTA AZUL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2910,9 +3072,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6320" model="party.address">
             <field name="party" ref="PARTY-PT6320"/>
-            <field name="street">AVENIDA D.NUNO ÁLVARES PEREIRA, 2</field>
-            <field name="zip">7540-102</field>
-            <field name="city">Santiago Do Cacém</field>
+            <field name="street">RUA ALEXANDRE HERCULANO, 50-A</field>
+            <field name="zip">2900-005</field>
+            <field name="city">Setúbal</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2925,7 +3087,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6330" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SAO TEOTONIO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE SÃO TEOTÓNIO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -2939,7 +3101,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT6330"/>
             <field name="street">RUA 25 DE ABRIL, 8</field>
             <field name="zip">7630-611</field>
-            <field name="city">S. Teotónio</field>
+            <field name="city">Odemira</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -2951,35 +3113,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT6330</field>
         </record>
 
-        <record id="PARTY-PT6350" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SOUSEL, CRL</field>
-            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
-            <field name="active">0</field>
-        </record>
-
-        <record id="CATEGORY-PT6350" model="party.party-party.category">
-            <field name="party" ref="PARTY-PT6350"/>
-            <field name="category" ref="bank_country.banks"/>
-        </record>
-
-        <record id="ADDRESS-PT6350" model="party.address">
-            <field name="party" ref="PARTY-PT6350"/>
-            <field name="street">PRAÇA DA REPÚBLICA</field>
-            <field name="zip">7470-220</field>
-            <field name="city">Sousel</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="active">1</field>
-        </record>
-
-        <record id="BANK-PT6350" model="bank">
-            <field name="party" ref="PARTY-PT6350"/>
-            <field name="bic">CCCMPTPLXXX</field>
-            <field name="country" search="[('code', '=', 'PT')]"/>
-            <field name="code">PT6350</field>
-        </record>
-
         <record id="PARTY-PT6430" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO NORTE ALENTEJANO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO NORTE ALENTEJANO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3006,7 +3141,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT6440" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALENTEJO CENTRAL, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO ALENTEJO CENTRAL, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3018,9 +3153,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT6440" model="party.address">
             <field name="party" ref="PARTY-PT6440"/>
-            <field name="street">PRAÇA DO GIRALDO, 12/15</field>
-            <field name="zip">7000-508</field>
-            <field name="city">Évora</field>
+            <field name="street">PRAÇA DA REPÚBLICA, 4-5 </field>
+            <field name="zip">7250-116</field>
+            <field name="city">Alandroal</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3033,7 +3168,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT7010" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE ALBUFEIRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALBUFEIRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3047,7 +3182,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT7010"/>
             <field name="street">RUA 5 DE OUTUBRO, Nº 1 - A</field>
             <field name="zip">8200-508</field>
-            <field name="city">Paderne</field>
+            <field name="city">Albufeira</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3060,7 +3195,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT7120" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SAO BARTOLOMEU DE MESSINES E SAO MARCOS DA SERRA, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE SÃO BARTOLOMEU DE MESSINES E SÃO MARCOS DA SERRA, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3074,7 +3209,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="party" ref="PARTY-PT7120"/>
             <field name="street">RUA DA LIBERDADE, 48/52</field>
             <field name="zip">8375-109</field>
-            <field name="city">S. Bartolomeu De Messines</field>
+            <field name="city">Silves</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3087,7 +3222,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT7130" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DE SILVES, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE SILVES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3099,9 +3234,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT7130" model="party.address">
             <field name="party" ref="PARTY-PT7130"/>
-            <field name="street">RUA COMENDADOR VILARINHO, 22</field>
-            <field name="zip">8300-128</field>
-            <field name="city">Silves</field>
+            <field name="street">RUA FONSECA DE ALMEIDA</field>
+            <field name="zip">8400-346</field>
+            <field name="city">Lagoa</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3114,7 +3249,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT7140" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO SOTAVENTO ALGARVIO, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO SOTAVENTO ALGARVIO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3126,9 +3261,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT7140" model="party.address">
             <field name="party" ref="PARTY-PT7140"/>
-            <field name="street">RUA  BORDA DE ÁGUA DE AGUIAR, 1</field>
-            <field name="zip">8800-326</field>
-            <field name="city">Tavira</field>
+            <field name="street">AVENIDA MANUEL ROSA MENDES, EDIFICIO SAGRES - LOJA B</field>
+            <field name="zip">8900-067</field>
+            <field name="city">Vila Real De Santo António</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3141,7 +3276,7 @@ this repository contains the full copyright notices and license terms. -->
         </record>
 
         <record id="PARTY-PT7210" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DO ALGARVE, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DO ALGARVE, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3153,9 +3288,9 @@ this repository contains the full copyright notices and license terms. -->
 
         <record id="ADDRESS-PT7210" model="party.address">
             <field name="party" ref="PARTY-PT7210"/>
-            <field name="street">RUA DE SANTO ANTÓNIO,  Nº 123</field>
-            <field name="zip">8000-284</field>
-            <field name="city">Faro</field>
+            <field name="street">RUA DA IGREJA, Nº 2</field>
+            <field name="zip">8100-012</field>
+            <field name="city">Loulé</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="active">1</field>
         </record>
@@ -3167,8 +3302,35 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT7210</field>
         </record>
 
+        <record id="PARTY-PT7500" model="party.party">
+            <field name="name">UNIVERSO, IME, S.A.</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7500" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7500"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7500" model="party.address">
+            <field name="party" ref="PARTY-PT7500"/>
+            <field name="street">LUGAR DO ESPIDO, VIA NORTE</field>
+            <field name="zip">4470-177</field>
+            <field name="city">Maia</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7500" model="bank">
+            <field name="party" ref="PARTY-PT7500"/>
+            <field name="bic">SONVPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7500</field>
+        </record>
+
         <record id="PARTY-PT8050" model="party.party">
-            <field name="name">CAIXA DE CREDITO AGRICOLA MUTUO DOS ACORES, CRL</field>
+            <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DOS AÇORES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
@@ -3194,8 +3356,35 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT8050</field>
         </record>
 
+        <record id="PARTY-PT8703" model="party.party">
+            <field name="name">SIBS PAGAMENTOS, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT8703" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT8703"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT8703" model="party.address">
+            <field name="party" ref="PARTY-PT8703"/>
+            <field name="street">RUA SOEIRO PEREIRA GOMES, LOTE 1</field>
+            <field name="zip">1649-031</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT8703" model="bank">
+            <field name="party" ref="PARTY-PT8703"/>
+            <field name="bic">SIAOPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT8703</field>
+        </record>
+
         <record id="PARTY-PT9000" model="party.party">
-            <field name="name">CAIXA CENTRAL - CAIXA CENTRAL DE CREDITO AGRICOLA MUTUO, CRL</field>
+            <field name="name">CAIXA CENTRAL - CAIXA CENTRAL DE CRÉDITO AGRÍCOLA MÚTUO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
             <field name="active">0</field>
         </record>
