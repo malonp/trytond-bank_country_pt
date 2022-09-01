@@ -404,6 +404,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0036</field>
         </record>
 
+        <record id="PARTY-PT0043" model="party.party">
+            <field name="name">DEUTSCHE BANK AKTIENGESELLSCHAFT - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0043" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0043"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0043" model="party.address">
+            <field name="party" ref="PARTY-PT0043"/>
+            <field name="street">RUA CASTILHO, 20 - 6.º</field>
+            <field name="zip">1250-069</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0043" model="bank">
+            <field name="party" ref="PARTY-PT0043"/>
+            <field name="bic">DEUTPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0043</field>
+        </record>
+
         <record id="PARTY-PT0047" model="party.party">
             <field name="name">HAITONG BANK, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -674,6 +701,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0073</field>
         </record>
 
+        <record id="PARTY-PT0076" model="party.party">
+            <field name="name">MONTEPIO INVESTIMENTO, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0076" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0076"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0076" model="party.address">
+            <field name="party" ref="PARTY-PT0076"/>
+            <field name="street">AVENIDA DE BERNA Nº 10</field>
+            <field name="zip">1050-040</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0076" model="bank">
+            <field name="party" ref="PARTY-PT0076"/>
+            <field name="bic">FBCOPTPPXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0076</field>
+        </record>
+
         <record id="PARTY-PT0079" model="party.party">
             <field name="name">BANCO BIC PORTUGUÊS, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -699,6 +753,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BPNPPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0079</field>
+        </record>
+
+        <record id="PARTY-PT0082" model="party.party">
+            <field name="name">FCE BANK PLC</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0082" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0082"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0082" model="party.address">
+            <field name="party" ref="PARTY-PT0082"/>
+            <field name="street">PARQUE TEJO, ESTRADA NACIONAL 10, KM 131.200 (ALVERCA)</field>
+            <field name="zip">2625-445</field>
+            <field name="city">Vila Franca De Xira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0082" model="bank">
+            <field name="party" ref="PARTY-PT0082"/>
+            <field name="bic">FCEFPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0082</field>
         </record>
 
         <record id="PARTY-PT0086" model="party.party">
@@ -809,6 +890,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0160</field>
         </record>
 
+        <record id="PARTY-PT0169" model="party.party">
+            <field name="name">CITIBANK EUROPE PLC - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0169" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0169"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0169" model="party.address">
+            <field name="party" ref="PARTY-PT0169"/>
+            <field name="street"> EDIFÍCIO FUNDAÇÃO, RUA BARATA SALGUEIRO, Nº 30 - 5º ANDAR</field>
+            <field name="zip">1269-056</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0169" model="bank">
+            <field name="party" ref="PARTY-PT0169"/>
+            <field name="bic">CITIPTPXXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0169</field>
+        </record>
+
         <record id="PARTY-PT0170" model="party.party">
             <field name="name">ABANCA CORPORACION BANCARIA, SA - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -834,6 +942,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">CAGLPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0170</field>
+        </record>
+
+        <record id="PARTY-PT0173" model="party.party">
+            <field name="name">EDMOND DE ROTHSCHILD EUROPE - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0173" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0173"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0173" model="party.address">
+            <field name="party" ref="PARTY-PT0173"/>
+            <field name="street">RUA D. PEDRO V, 130</field>
+            <field name="zip">1250-095</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0173" model="bank">
+            <field name="party" ref="PARTY-PT0173"/>
+            <field name="bic">PRIBPTPXXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0173</field>
         </record>
 
         <record id="PARTY-PT0189" model="party.party">
@@ -998,6 +1133,60 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT0246</field>
         </record>
 
+        <record id="PARTY-PT0257" model="party.party">
+            <field name="name">BNP PARIBAS SECURITIES SERVICES - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0257" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0257"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0257" model="party.address">
+            <field name="party" ref="PARTY-PT0257"/>
+            <field name="street">AV. D. JOÃO II, 1.18.01, BLOCO B, 9º ANDAR</field>
+            <field name="zip">1998-028</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0257" model="bank">
+            <field name="party" ref="PARTY-PT0257"/>
+            <field name="bic">PARBPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0257</field>
+        </record>
+
+        <record id="PARTY-PT0266" model="party.party">
+            <field name="name">BANK OF CHINA (EUROPE), SA LISBON BRANCH - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0266" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0266"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0266" model="party.address">
+            <field name="party" ref="PARTY-PT0266"/>
+            <field name="street">RUA DUQUE DE PALMELA, NºS. 35, 35A E 37</field>
+            <field name="zip">1250-097</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0266" model="bank">
+            <field name="party" ref="PARTY-PT0266"/>
+            <field name="bic">BKCHPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0266</field>
+        </record>
+
         <record id="PARTY-PT0269" model="party.party">
             <field name="name">BANKINTER, SA - SUCURSAL EM PORTUGAL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -1023,6 +1212,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BKBKPTPLXXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0269</field>
+        </record>
+
+        <record id="PARTY-PT0272" model="party.party">
+            <field name="name">WIZINK BANK, SA - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0272" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0272"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0272" model="party.address">
+            <field name="party" ref="PARTY-PT0272"/>
+            <field name="street">NORTESHOPPING, RUA SARA AFONSO, 105/117 </field>
+            <field name="zip">4460-841</field>
+            <field name="city">Matosinhos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0272" model="bank">
+            <field name="party" ref="PARTY-PT0272"/>
+            <field name="bic">WZNKPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0272</field>
         </record>
 
         <record id="PARTY-PT0275" model="party.party">
@@ -1077,6 +1293,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">CIEDPTP1XXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0305</field>
+        </record>
+
+        <record id="PARTY-PT0500" model="party.party">
+            <field name="name">ING BANK NV - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0500" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0500"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0500" model="party.address">
+            <field name="party" ref="PARTY-PT0500"/>
+            <field name="street">AVENIDA DA LIBERDADE, Nº 200, 6º</field>
+            <field name="zip">1250-147</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0500" model="bank">
+            <field name="party" ref="PARTY-PT0500"/>
+            <field name="bic">BBRUPTPLXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0500</field>
         </record>
 
         <record id="PARTY-PT0698" model="party.party">
@@ -1149,6 +1392,60 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">BIFDPTP1XXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT0800</field>
+        </record>
+
+        <record id="PARTY-PT0848" model="party.party">
+            <field name="name">BNP PARIBAS PERSONAL FINANCE, S.A. - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0848" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0848"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0848" model="party.address">
+            <field name="party" ref="PARTY-PT0848"/>
+            <field name="street">URBO BUSINESS CENTER, RUA HENRIQUE POUSÃO N.º 900, PISO 0 (LD DIREITO)</field>
+            <field name="zip">4460-191</field>
+            <field name="city">Matosinhos</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0848" model="bank">
+            <field name="party" ref="PARTY-PT0848"/>
+            <field name="bic">BNPAPTPPXXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0848</field>
+        </record>
+
+        <record id="PARTY-PT0881" model="party.party">
+            <field name="name">ONEY BANK - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT0881" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT0881"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT0881" model="party.address">
+            <field name="party" ref="PARTY-PT0881"/>
+            <field name="street">CENTRO COMERCIAL ALEGRO, AV. DOS CAVALEIROS</field>
+            <field name="zip">2790-045</field>
+            <field name="city">Oeiras</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT0881" model="bank">
+            <field name="party" ref="PARTY-PT0881"/>
+            <field name="bic">ONIFPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT0881</field>
         </record>
 
         <record id="PARTY-PT0916" model="party.party">
@@ -2816,6 +3113,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT5470</field>
         </record>
 
+        <record id="PARTY-PT5810" model="party.party">
+            <field name="name">FINANCIÈRE DES PAIEMENTS ÉLECTRONIQUES SAS - SUCURSAL EM PORTUGAL</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT5810" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT5810"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT5810" model="party.address">
+            <field name="party" ref="PARTY-PT5810"/>
+            <field name="street">RUA GALILEU GALILEI, Nº 2, 8º, TORRE OCIDENTE, CENTRO COLOMBO</field>
+            <field name="zip">1500-392</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT5810" model="bank">
+            <field name="party" ref="PARTY-PT5810"/>
+            <field name="bic">FPEAPTP2XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT5810</field>
+        </record>
+
         <record id="PARTY-PT6020" model="party.party">
             <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DE ALCÁCER DO SAL E MONTEMOR-O-NOVO, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -3329,6 +3653,33 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT7500</field>
         </record>
 
+        <record id="PARTY-PT7837" model="party.party">
+            <field name="name">VIVA PAYMENT SERVICES SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT7837" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT7837"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT7837" model="party.address">
+            <field name="party" ref="PARTY-PT7837"/>
+            <field name="street">RUA BARATA SALGUEIRO, 30, 2.º ESQUERDO</field>
+            <field name="zip">1250-044</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT7837" model="bank">
+            <field name="party" ref="PARTY-PT7837"/>
+            <field name="bic">VPAYPTP2XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT7837</field>
+        </record>
+
         <record id="PARTY-PT8050" model="party.party">
             <field name="name">CAIXA DE CRÉDITO AGRÍCOLA MÚTUO DOS AÇORES, CRL</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -3356,6 +3707,24 @@ this repository contains the full copyright notices and license terms. -->
             <field name="code">PT8050</field>
         </record>
 
+        <record id="PARTY-PT8115" model="party.party">
+            <field name="name">CTT - CORREIOS DE PORTUGAL, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT8115" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT8115"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="BANK-PT8115" model="bank">
+            <field name="party" ref="PARTY-PT8115"/>
+            <field name="bic">CTTPPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT8115</field>
+        </record>
+
         <record id="PARTY-PT8703" model="party.party">
             <field name="name">SIBS PAGAMENTOS, SA</field>
             <field name="lang" search="[('code', '=', 'pt_BR')]"/>
@@ -3381,6 +3750,60 @@ this repository contains the full copyright notices and license terms. -->
             <field name="bic">SIAOPTP1XXX</field>
             <field name="country" search="[('code', '=', 'PT')]"/>
             <field name="code">PT8703</field>
+        </record>
+
+        <record id="PARTY-PT8705" model="party.party">
+            <field name="name">ALTICE PAY, SA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT8705" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT8705"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT8705" model="party.address">
+            <field name="party" ref="PARTY-PT8705"/>
+            <field name="street">AV. FONTES PEREIRA DE MELO, N.º 40</field>
+            <field name="zip">1069-300</field>
+            <field name="city">Lisboa</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT8705" model="bank">
+            <field name="party" ref="PARTY-PT8705"/>
+            <field name="bic">PAYYPTP1XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT8705</field>
+        </record>
+
+        <record id="PARTY-PT8707" model="party.party">
+            <field name="name">IFTHENPAY, LDA</field>
+            <field name="lang" search="[('code', '=', 'pt_BR')]"/>
+            <field name="active">0</field>
+        </record>
+
+        <record id="CATEGORY-PT8707" model="party.party-party.category">
+            <field name="party" ref="PARTY-PT8707"/>
+            <field name="category" ref="bank_country.banks"/>
+        </record>
+
+        <record id="ADDRESS-PT8707" model="party.address">
+            <field name="party" ref="PARTY-PT8707"/>
+            <field name="street">RUA S. JOSÉ, N.º 771</field>
+            <field name="zip">4535-404</field>
+            <field name="city">Santa Maria Da Feira</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="active">1</field>
+        </record>
+
+        <record id="BANK-PT8707" model="bank">
+            <field name="party" ref="PARTY-PT8707"/>
+            <field name="bic">IFLDPTP2XXX</field>
+            <field name="country" search="[('code', '=', 'PT')]"/>
+            <field name="code">PT8707</field>
         </record>
 
         <record id="PARTY-PT9000" model="party.party">
